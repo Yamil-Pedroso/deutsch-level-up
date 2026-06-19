@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 0;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+  background-color: #eadcc3;
+  overflow-x: hidden;
+}
