@@ -1,5 +1,32 @@
 export type DaWortItem = {
-  wort: string;
-  literal: string;
-  bedeutung: string;
+  praeposition: string;
+  kasus: string;
+  frage: string;
+  antwort: string;
+  beispiel: string;
+};
+
+export type ImportantDaWortItem = {
+  label: string;
+  frage: string;
+  antwort: string;
+  translation: string;
+};
+
+export type GenitivDaWortItem = {
+  praeposition: string;
+  kasus: "Gen";
+  frage: string;
+  antwort: string;
+};
+
+export type GenitivExample = {
+  frage: string;
+  antwort: string;
+  translation: string;
+};
+
+export type GoldenRulePair = {
+  frage: string;
+  antwort: string;
 };
