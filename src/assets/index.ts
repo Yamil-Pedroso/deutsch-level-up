@@ -10,7 +10,7 @@ import werbungKonsum from "./images/grammatik_formulierungen/Werbung_und_Konsum.
 import lernen from "./images/grammatik_formulierungen/Lernen.png";
 import verkehr from "./images/grammatik_formulierungen/Verkehr.png";
 import gefuhleEingenschaften from "./images/grammatik_formulierungen/Gefuhle_Eingeschaften.png";
-import essenTrinken from "./images/grammatik_formulierungen/Essen_und_Trinken.png";
+import essenTrinken from "./images/grammatik_formulierungen/essen_und_trinken.png";
 interface IAssets {
   [key: string]: string;
 }
