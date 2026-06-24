@@ -29,6 +29,11 @@ const DaWoerter = () => {
               {daWoerterData.length} Formen
             </span>
           </div>
+          <div className="mt-4 border-2 border-[#17130c] bg-[#fffaf0] px-4 py-3 text-sm font-bold shadow-[3px_3px_0_#17130c]">
+            <span className="font-black">Wichtig:</span> wo(r) + Präposition
+            fragt nach Sachen oder Ideen. <span className="font-black">Warum?</span>{" "}
+            fragt dagegen nach einem Grund und ist kein Pronominaladverb.
+          </div>
         </header>
 
         <section className="border-b-2 border-[#17130c] p-4 sm:p-7">
@@ -47,13 +52,14 @@ const DaWoerter = () => {
           </div>
 
           <div className="overflow-x-auto border-2 border-[#17130c] bg-[#fffaf0] shadow-[4px_4px_0_#17130c]">
-            <table className="w-full min-w-[760px] border-collapse text-left text-sm">
+            <table className="w-full min-w-[900px] border-collapse text-left text-sm">
               <thead>
                 <tr className="border-b-2 border-[#17130c] bg-[#17130c] text-white">
                   <th className="px-3 py-3 font-black">Präposition</th>
                   <th className="px-3 py-3 font-black">Kasus</th>
                   <th className="px-3 py-3 font-black">Frage wo-</th>
                   <th className="px-3 py-3 font-black">Antwort da-</th>
+                  <th className="px-3 py-3 font-black">Bedeutung</th>
                   <th className="px-3 py-3 font-black">Beispiel</th>
                 </tr>
               </thead>
@@ -74,6 +80,9 @@ const DaWoerter = () => {
                     <td className="px-3 py-3 font-black">{item.frage}</td>
                     <td className="px-3 py-3 font-black text-[#b34515]">
                       {item.antwort}
+                    </td>
+                    <td className="px-3 py-3 font-bold text-[#5f4d35]">
+                      {item.translation}
                     </td>
                     <td className="px-3 py-3 font-semibold text-[#5f4d35]">
                       {item.beispiel}

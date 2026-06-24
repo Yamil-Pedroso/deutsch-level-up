@@ -3,6 +3,7 @@ export type DaWortItem = {
   kasus: string;
   frage: string;
   antwort: string;
+  translation: string;
   beispiel: string;
 };
 

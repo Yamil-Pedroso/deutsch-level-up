@@ -6,8 +6,8 @@ import Wortschatz from "./components/wortschatz/Wortschatz";
 import Graphik from "./components/graphik/Graphik";
 import DaWoerter from "./components/da-woerter/DaWoerter";
 import Konnectoren from "./components/konnektoren/Konnektoren";
-import WoWoerter from "./components/wo-woerter/WoWoerter";
 import GrammarFormulierungen from "./components/grammar-formulierungen/GrammarFormulierungen";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 function App() {
   return (
@@ -25,7 +25,6 @@ function App() {
         <Route path="/graphik" element={<Graphik />} />
         <Route path="/da-woerter" element={<DaWoerter />} />
         <Route path="/konnectoren" element={<Konnectoren />} />
-        <Route path="/wo-woerter" element={<WoWoerter />} />
         <Route path="/grammar-formulierungen" element={<GrammarFormulierungen />} />
         <Route
           path="*"
@@ -34,6 +33,7 @@ function App() {
           }
         />
       </Routes>
+      <ScrollToTop />
     </Router>
   );
 }

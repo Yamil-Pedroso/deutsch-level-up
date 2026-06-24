@@ -12,6 +12,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Akk/Dat",
     frage: "woran?",
     antwort: "daran",
+    translation: "¿en qué?",
     beispiel: "Woran denkst du? - Ich denke daran.",
   },
   {
@@ -19,6 +20,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Akk",
     frage: "worauf?",
     antwort: "darauf",
+    translation: "¿sobre qué? / ¿a qué?",
     beispiel: "Worauf wartest du? - Ich warte darauf.",
   },
   {
@@ -26,6 +28,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Dat",
     frage: "woraus?",
     antwort: "daraus",
+    translation: "¿de qué? / ¿a partir de qué?",
     beispiel: "Woraus besteht das? - Es besteht daraus.",
   },
   {
@@ -33,6 +36,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Dat",
     frage: "wobei?",
     antwort: "dabei",
+    translation: "¿en qué? / ¿con qué actividad?",
     beispiel: "Wobei hilfst du mir? - Ich helfe dir dabei.",
   },
   {
@@ -40,6 +44,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Akk",
     frage: "wodurch?",
     antwort: "dadurch",
+    translation: "¿por qué medio? / ¿a través de qué?",
     beispiel: "Wodurch ist das passiert? - Dadurch.",
   },
   {
@@ -47,6 +52,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Akk",
     frage: "wofür?",
     antwort: "dafür",
+    translation: "¿para qué? / ¿por qué?",
     beispiel: "Wofür interessierst du dich? - Dafür.",
   },
   {
@@ -54,6 +60,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Akk",
     frage: "wogegen?",
     antwort: "dagegen",
+    translation: "¿contra qué?",
     beispiel: "Wogegen kämpft er? - Dagegen.",
   },
   {
@@ -61,6 +68,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Akk/Dat",
     frage: "wohinter?",
     antwort: "dahinter",
+    translation: "¿detrás de qué?",
     beispiel: "Was steckt dahinter? - Das steckt dahinter.",
   },
   {
@@ -68,6 +76,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Akk/Dat",
     frage: "worin?",
     antwort: "darin",
+    translation: "¿en qué? / ¿dentro de qué?",
     beispiel: "Worin besteht das Problem? - Darin.",
   },
   {
@@ -75,6 +84,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Dat",
     frage: "womit?",
     antwort: "damit",
+    translation: "¿con qué?",
     beispiel: "Womit fängst du an? - Damit.",
   },
   {
@@ -82,6 +92,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Dat",
     frage: "wonach?",
     antwort: "danach",
+    translation: "¿qué? / ¿en busca de qué?",
     beispiel: "Wonach suchst du? - Danach.",
   },
   {
@@ -89,6 +100,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Akk/Dat",
     frage: "woneben?",
     antwort: "daneben",
+    translation: "¿al lado de qué?",
     beispiel: "Was liegt neben dem Buch? - Das liegt daneben.",
   },
   {
@@ -96,6 +108,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Akk",
     frage: "worüber?",
     antwort: "darüber",
+    translation: "¿sobre qué? / ¿acerca de qué?",
     beispiel: "Worüber sprecht ihr? - Darüber.",
   },
   {
@@ -103,6 +116,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Akk",
     frage: "worum?",
     antwort: "darum",
+    translation: "¿de qué se trata? / ¿alrededor de qué?",
     beispiel: "Worum kümmerst du dich? - Darum.",
   },
   {
@@ -110,6 +124,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Akk/Dat",
     frage: "worunter?",
     antwort: "darunter",
+    translation: "¿de qué se sufre? / ¿debajo de qué?",
     beispiel: "Worunter leidet er? - Darunter.",
   },
   {
@@ -117,6 +132,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Dat",
     frage: "wovon?",
     antwort: "davon",
+    translation: "¿de qué?",
     beispiel: "Wovon träumst du? - Davon.",
   },
   {
@@ -124,6 +140,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Akk/Dat",
     frage: "wovor?",
     antwort: "davor",
+    translation: "¿ante qué? / ¿de qué?",
     beispiel: "Wovor hast du Angst? - Davor.",
   },
   {
@@ -131,6 +148,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Dat",
     frage: "wozu?",
     antwort: "dazu",
+    translation: "¿para qué?",
     beispiel: "Wozu dient das? - Dazu.",
   },
   {
@@ -138,6 +156,7 @@ export const daWoerterData: DaWortItem[] = [
     kasus: "Akk/Dat",
     frage: "wozwischen?",
     antwort: "dazwischen",
+    translation: "¿entre qué?",
     beispiel: "Was liegt zwischen den Häusern? - Dazwischen.",
   },
 ];

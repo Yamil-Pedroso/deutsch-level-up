@@ -1,4 +1,5 @@
 import type { GrammarChapter } from "../types/grammar-formulierungen-types";
+import assets from "../../../assets";
 
 export const grammarChapters: GrammarChapter[] = [
   {
@@ -6,6 +7,7 @@ export const grammarChapters: GrammarChapter[] = [
     label: "Kapitel 1",
     title: "Zeit und Zeitvertreib",
     description: "Platzhalter für Formeln, Satzstrukturen und Beispiele.",
+    image: assets.zeitZeitvertrieb,
     topicGroups: [
       {
         title: "Kommunikation",
@@ -347,6 +349,7 @@ export const grammarChapters: GrammarChapter[] = [
     label: "Kapitel 2",
     title: "Arbeit und Beruf",
     description: "Platzhalter für Formeln, Satzstrukturen und Beispiele.",
+    image: assets.arbeitBeruf,
     topicGroups: [
       {
         title: "Kommunikation",
@@ -990,6 +993,7 @@ export const grammarChapters: GrammarChapter[] = [
     label: "Kapitel 3",
     title: "Medien",
     description: "Platzhalter für Formeln, Satzstrukturen und Beispiele.",
+    image: assets.medien,
     topicGroups: [
       {
         title: "Kommunikation",
@@ -1743,6 +1747,7 @@ export const grammarChapters: GrammarChapter[] = [
     label: "Kapitel 4",
     title: "Werbung und Konsum",
     description: "Platzhalter für Formeln, Satzstrukturen und Beispiele.",
+    image: assets.werbungKonsum,
     topicGroups: [
       {
         title: "Kommunikation",
@@ -1773,6 +1778,7 @@ export const grammarChapters: GrammarChapter[] = [
     label: "Kapitel 5",
     title: "Lernen, lernen und nochmals lernen",
     description: "Platzhalter für Formeln, Satzstrukturen und Beispiele.",
+    image: assets.lernen,
     topicGroups: [
       {
         title: "Kommunikation",
@@ -1803,6 +1809,7 @@ export const grammarChapters: GrammarChapter[] = [
     label: "Kapitel 6",
     title: "Verkehr und Mobilität",
     description: "Platzhalter für Formeln, Satzstrukturen und Beispiele.",
+    image: assets.verkehr,
     topicGroups: [
       {
         title: "Kommunikation",
@@ -1833,6 +1840,7 @@ export const grammarChapters: GrammarChapter[] = [
     label: "Kapitel 7",
     title: "Gefühle und Eigenschaften",
     description: "Platzhalter für Formeln, Satzstrukturen und Beispiele.",
+    image: assets.gefuhleEingenschaften,
     topicGroups: [
       {
         title: "Kommunikation",
@@ -1863,6 +1871,7 @@ export const grammarChapters: GrammarChapter[] = [
     label: "Kapitel 8",
     title: "Essen und Trinken",
     description: "Platzhalter für Formeln, Satzstrukturen und Beispiele.",
+    image: assets.essenTrinken,
     topicGroups: [
       {
         title: "Kommunikation",

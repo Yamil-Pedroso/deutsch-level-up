@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { grammarChapters } from "./data/grammar-formulierungen-data";
 import type {
   GrammarResource,
@@ -209,15 +209,43 @@ const ResourceCard = ({ resource }: ResourceCardProps) => {
 };
 
 const GrammarFormulierungen = () => {
+  const contentScrollRef = useRef<HTMLElement | null>(null);
+  const resourcesRef = useRef<HTMLDivElement | null>(null);
   const [activeChapterId, setActiveChapterId] = useState(grammarChapters[0].id);
   const activeChapter =
     grammarChapters.find((chapter) => chapter.id === activeChapterId) ??
     grammarChapters[0];
+  const chapterFocusItems = activeChapter.topicGroups
+    .flatMap((group) => group.items)
+    .slice(0, 4);
+  const grammarResourceCount = activeChapter.resources.filter(
+    (resource) => resource.type === "table"
+  ).length;
+  const verbResourceCount = activeChapter.resources.filter(
+    (resource) => resource.type === "verbs"
+  ).length;
+  const scrollToResources = () => {
+    const scrollContainer = contentScrollRef.current;
+    const target = resourcesRef.current;
+
+    if (scrollContainer && target) {
+      scrollContainer.scrollTo({
+        behavior: "smooth",
+        top: target.offsetTop - 24,
+      });
+      return;
+    }
+
+    target?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
 
   return (
-    <main className="min-h-screen overflow-x-hidden bg-[#eadcc3] px-3 py-6 text-[#17130c] sm:px-6 lg:px-10">
-      <section className="w-full max-w-full overflow-hidden border-2 border-[#17130c] bg-[#f8edd6] shadow-[4px_4px_0_#17130c] sm:overflow-visible sm:shadow-[10px_10px_0_#17130c]">
-        <header className="border-b-2 border-[#17130c] bg-[#ffe130] p-4 sm:p-7 lg:sticky lg:top-0 lg:z-30 lg:shadow-[0_8px_0_#17130c]">
+    <main className="min-h-screen overflow-x-hidden bg-[#eadcc3] px-3 py-0 text-[#17130c] sm:px-6 lg:h-screen lg:overflow-hidden lg:px-10">
+      <section className="flex w-full max-w-full flex-col overflow-hidden border-2 border-[#17130c] bg-[#f8edd6] shadow-[4px_4px_0_#17130c] sm:shadow-[10px_10px_0_#17130c] lg:h-full">
+        <header className="shrink-0 border-b-2 border-[#17130c] bg-[#ffe130] p-4 sm:p-7 lg:sticky lg:top-0 lg:z-30 lg:shadow-[0_8px_0_#17130c]">
           <p className="text-xs font-black uppercase tracking-[0.22em]">
             Deutsch Studio / Grammatik
           </p>
@@ -230,8 +258,8 @@ const GrammarFormulierungen = () => {
           </p>
         </header>
 
-        <div className="grid min-w-0 max-w-full lg:grid-cols-[minmax(220px,260px)_minmax(0,1fr)]">
-          <aside className="min-w-0 max-w-full overflow-hidden border-b-2 border-[#17130c] bg-[#fffaf0] p-4 sm:p-5 lg:sticky lg:top-[210px] lg:max-h-[calc(100vh-230px)] lg:overflow-y-auto lg:border-b-0 lg:border-r-2">
+        <div className="grid min-h-0 min-w-0 max-w-full flex-1 lg:grid-cols-[minmax(220px,260px)_minmax(0,1fr)]">
+          <aside className="min-w-0 max-w-full overflow-hidden border-b-2 border-[#17130c] bg-[#fffaf0] p-4 sm:p-5 lg:max-h-none lg:overflow-y-auto lg:border-b-0 lg:border-r-2">
             <p className="mb-4 text-xs font-black uppercase tracking-[0.2em]">
               Kapitel
             </p>
@@ -241,14 +269,23 @@ const GrammarFormulierungen = () => {
 
                 return (
                   <button
-                    className={`flex max-w-[calc(100vw-4rem)] shrink-0 items-center justify-between gap-4 border border-[#17130c] px-3 py-3 text-left text-sm font-black transition hover:bg-[#ffe130] lg:max-w-none lg:shrink ${
+                    className={`flex max-w-[calc(100vw-4rem)] shrink-0 items-center justify-between gap-3 border border-[#17130c] px-3 py-3 text-left text-sm font-black transition hover:bg-[#ffe130] lg:max-w-none lg:shrink ${
                       isActive ? "bg-[#ff7b2f] text-white" : "bg-[#fffaf0]"
                     }`}
                     key={chapter.id}
                     onClick={() => setActiveChapterId(chapter.id)}
                     type="button"
                   >
-                    <span className="min-w-0 truncate">{chapter.label}</span>
+                    <span className="flex min-w-0 items-center gap-3">
+                      <img
+                        alt={chapter.title}
+                        className="h-10 w-10 shrink-0 border border-[#17130c] bg-[#ffe45e] object-cover"
+                        src={chapter.image}
+                      />
+                      <span className="min-w-0 truncate">
+                        {chapter.label}
+                      </span>
+                    </span>
                     <span>{chapter.resources.length}</span>
                   </button>
                 );
@@ -256,22 +293,99 @@ const GrammarFormulierungen = () => {
             </div>
           </aside>
 
-          <section className="min-w-0 max-w-full overflow-hidden p-4 sm:p-7">
-            <div className="mb-6 flex min-w-0 flex-wrap items-end justify-between gap-4 border-b-2 border-[#17130c] pb-5">
+          <section
+            className="min-w-0 max-w-full overflow-hidden p-4 sm:p-7 lg:overflow-y-auto"
+            ref={contentScrollRef}
+          >
+            <div className="mb-6 grid min-w-0 gap-5 border-b-2 border-[#17130c] pb-5 lg:grid-cols-[minmax(0,1fr)_420px] lg:items-end xl:grid-cols-[minmax(0,1fr)_520px]">
               <div className="min-w-0">
-                <p className="text-xs font-black uppercase tracking-[0.2em]">
-                  Aktives Kapitel
-                </p>
-                <h3 className="mt-1 break-words text-2xl font-black sm:text-3xl">
-                  {activeChapter.title}
-                </h3>
+                <div className="flex min-w-0 flex-wrap items-end justify-between gap-4">
+                  <div className="min-w-0">
+                    <p className="text-xs font-black uppercase tracking-[0.2em]">
+                      Aktives Kapitel
+                    </p>
+                    <h3 className="mt-1 break-words text-2xl font-black sm:text-3xl">
+                      {activeChapter.title}
+                    </h3>
+                  </div>
+                  <span className="border border-[#17130c] bg-[#ffe45e] px-3 py-1 text-xs font-black uppercase tracking-[0.12em]">
+                    {activeChapter.resources.length} Einträge
+                  </span>
+                </div>
                 <p className="mt-2 max-w-2xl text-sm font-bold leading-relaxed text-[#5f4d35]">
                   {activeChapter.description}
                 </p>
+
+                <div className="mt-5 border-2 border-[#17130c] bg-[#fffaf0] p-4 shadow-[4px_4px_0_#17130c]">
+                  <p className="text-xs font-black uppercase tracking-[0.2em]">
+                    Kapitel-Fokus
+                  </p>
+                  <div className="mt-4 grid gap-2 sm:grid-cols-3">
+                    <div className="border border-[#17130c] bg-[#ffe45e] p-3">
+                      <p className="text-[10px] font-black uppercase tracking-[0.12em]">
+                        Themen
+                      </p>
+                      <p className="mt-1 text-2xl font-black">
+                        {activeChapter.topicGroups.length}
+                      </p>
+                    </div>
+                    <div className="border border-[#17130c] bg-[#ff7b2f] p-3 text-white">
+                      <p className="text-[10px] font-black uppercase tracking-[0.12em]">
+                        Grammatik
+                      </p>
+                      <p className="mt-1 text-2xl font-black">
+                        {grammarResourceCount}
+                      </p>
+                    </div>
+                    <div className="border border-[#17130c] bg-[#17130c] p-3 text-white">
+                      <p className="text-[10px] font-black uppercase tracking-[0.12em]">
+                        Verben
+                      </p>
+                      <p className="mt-1 text-2xl font-black">
+                        {verbResourceCount}
+                      </p>
+                    </div>
+                  </div>
+
+                  {chapterFocusItems.length > 0 && (
+                    <div className="mt-4 border-t border-dashed border-[#17130c]/40 pt-4">
+                      <p className="text-xs font-black uppercase tracking-[0.16em]">
+                        Du lernst hier
+                      </p>
+                      <ul className="mt-3 space-y-2">
+                        {chapterFocusItems.map((item) => (
+                          <li
+                            className="flex gap-2 text-sm font-bold text-[#4a3922]"
+                            key={item}
+                          >
+                            <span className="mt-1 h-2 w-2 shrink-0 border border-[#17130c] bg-[#ff7b2f]" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  <button
+                    className="mt-4 border-2 border-[#17130c] bg-[#ffe130] px-4 py-3 text-sm font-black uppercase tracking-[0.12em] transition hover:-translate-y-0.5 hover:bg-[#ff7b2f] hover:text-white hover:shadow-[3px_3px_0_#17130c]"
+                    onClick={scrollToResources}
+                    type="button"
+                  >
+                    Kapitel starten
+                  </button>
+                </div>
               </div>
-              <span className="border border-[#17130c] bg-[#ffe45e] px-3 py-1 text-xs font-black uppercase tracking-[0.12em]">
-                {activeChapter.resources.length} Einträge
-              </span>
+
+              <figure className="min-w-0 overflow-hidden border-2 border-[#17130c] bg-[#fffaf0] shadow-[5px_5px_0_#17130c] transition hover:-translate-y-1 hover:shadow-[9px_9px_0_#17130c]">
+                <img
+                  alt={activeChapter.title}
+                  className="h-72 w-full object-cover sm:h-80 lg:h-96 xl:h-[28rem]"
+                  src={activeChapter.image}
+                />
+                <figcaption className="border-t-2 border-[#17130c] bg-[#ff7b2f] px-3 py-2 text-xs font-black uppercase tracking-[0.12em] text-white">
+                  {activeChapter.title}
+                </figcaption>
+              </figure>
             </div>
 
             {activeChapter.topicGroups.length > 0 && (
@@ -283,7 +397,11 @@ const GrammarFormulierungen = () => {
             )}
 
             {activeChapter.resources.length > 0 ? (
-              <div className="grid min-w-0 gap-5">
+              <div
+                className="grid min-w-0 scroll-mt-28 gap-5"
+                id="grammar-active-resources"
+                ref={resourcesRef}
+              >
                 {activeChapter.resources.map((resource) => (
                   <ResourceCard key={resource.id} resource={resource} />
                 ))}

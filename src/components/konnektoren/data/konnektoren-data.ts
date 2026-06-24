@@ -1,156 +1,403 @@
-import type { KonnektorItem } from "../types/konnektoren-types";
+import type {
+  ConnectorComparison,
+  KonnektorItem,
+  MistakeExercise,
+  QuizQuestion,
+  SentenceExercise,
+  TransformationExercise,
+  WordOrderExercise,
+} from "../types/konnektoren-types";
 
 export const konnektorenData: KonnektorItem[] = [
   {
+    id: "und",
     wort: "und",
     literal: "y",
-    bedeutung:
-      "Ich lerne Deutsch und lese Bücher. / Aprendo alemán y leo libros.",
     category: "Addition",
+    level: "A1",
+    verbPosition: "Unverändert",
+    structure: "Hauptsatz + und + Hauptsatz",
+    exampleDe: "Ich lerne Deutsch und ich lese jeden Abend.",
+    exampleEs: "Aprendo alemán y leo cada noche.",
   },
   {
+    id: "ausserdem",
     wort: "außerdem",
     literal: "además",
-    bedeutung:
-      "Ich lerne Deutsch, außerdem mache ich Sport. / Estudio alemán, además hago deporte.",
     category: "Addition",
+    level: "A2",
+    verbPosition: "Position 2",
+    structure: "Hauptsatz. Außerdem + Verb + Subjekt",
+    exampleDe: "Ich lerne Deutsch. Außerdem besuche ich einen Kurs.",
+    exampleEs: "Estudio alemán. Además, asisto a un curso.",
   },
   {
-    wort: "sowie",
-    literal: "así como",
-    bedeutung: "Er spricht Englisch sowie Spanisch. / Habla inglés así como español.",
-    category: "Addition",
-  },
-  {
+    id: "nicht-nur",
     wort: "nicht nur … sondern auch",
     literal: "no solo … sino también",
-    bedeutung:
-      "Er ist nicht nur klug, sondern auch freundlich. / No es solo inteligente, sino también amable.",
     category: "Addition",
+    level: "B1",
+    verbPosition: "Unverändert",
+    structure: "nicht nur + Satzteil, sondern auch + Satzteil",
+    exampleDe: "Sie ist nicht nur klug, sondern auch sehr geduldig.",
+    exampleEs: "No solo es inteligente, sino también muy paciente.",
   },
   {
+    id: "aber",
     wort: "aber",
     literal: "pero",
-    bedeutung:
-      "Ich wollte kommen, aber ich war krank. / Quería venir, pero estaba enfermo.",
     category: "Gegensatz",
+    level: "A1",
+    verbPosition: "Unverändert",
+    structure: "Hauptsatz + aber + Hauptsatz",
+    exampleDe: "Ich wollte kommen, aber ich war krank.",
+    exampleEs: "Quería venir, pero estaba enfermo.",
   },
   {
+    id: "jedoch",
     wort: "jedoch",
     literal: "sin embargo",
-    bedeutung:
-      "Ich war krank, jedoch habe ich gearbeitet. / Estaba enfermo, sin embargo trabajé.",
     category: "Gegensatz",
+    level: "B1",
+    verbPosition: "Position 2",
+    structure: "Hauptsatz. Jedoch + Verb + Subjekt",
+    exampleDe: "Die Aufgabe war schwer. Jedoch habe ich sie gelöst.",
+    exampleEs: "La tarea era difícil. Sin embargo, la resolví.",
   },
   {
+    id: "trotzdem",
     wort: "trotzdem",
     literal: "a pesar de eso",
-    bedeutung:
-      "Es regnet, trotzdem gehen wir spazieren. / Llueve, a pesar de eso salimos a pasear.",
     category: "Gegensatz",
+    level: "A2",
+    verbPosition: "Position 2",
+    structure: "Hauptsatz. Trotzdem + Verb + Subjekt",
+    exampleDe: "Es regnet. Trotzdem gehen wir spazieren.",
+    exampleEs: "Llueve. A pesar de eso, salimos a pasear.",
   },
   {
+    id: "obwohl",
     wort: "obwohl",
     literal: "aunque",
-    bedeutung:
-      "Obwohl es regnet, gehen wir spazieren. / Aunque llueve, salimos a pasear.",
     category: "Gegensatz",
+    level: "B1",
+    verbPosition: "Satzende",
+    structure: "Obwohl + Subjekt + ... + Verb, Hauptsatz",
+    exampleDe: "Obwohl es regnet, gehen wir spazieren.",
+    exampleEs: "Aunque llueve, salimos a pasear.",
   },
   {
+    id: "weil",
     wort: "weil",
     literal: "porque",
-    bedeutung:
-      "Ich bleibe zu Hause, weil ich müde bin. / Me quedo en casa porque estoy cansado.",
     category: "Kausal",
+    level: "A2",
+    verbPosition: "Satzende",
+    structure: "Hauptsatz, weil + Subjekt + ... + Verb",
+    exampleDe: "Ich bleibe zu Hause, weil ich müde bin.",
+    exampleEs: "Me quedo en casa porque estoy cansado.",
   },
   {
+    id: "denn",
     wort: "denn",
     literal: "pues / porque",
-    bedeutung:
-      "Ich bleibe zu Hause, denn ich bin müde. / Me quedo en casa pues estoy cansado.",
     category: "Kausal",
+    level: "A2",
+    verbPosition: "Unverändert",
+    structure: "Hauptsatz, denn + Subjekt + Verb",
+    exampleDe: "Ich bleibe zu Hause, denn ich bin müde.",
+    exampleEs: "Me quedo en casa, pues estoy cansado.",
   },
   {
+    id: "deshalb",
     wort: "deshalb",
     literal: "por eso",
-    bedeutung:
-      "Ich bin müde, deshalb bleibe ich zu Hause. / Estoy cansado, por eso me quedo en casa.",
-    category: "Kausal",
+    category: "Konsekutiv",
+    level: "A2",
+    verbPosition: "Position 2",
+    structure: "Grund. Deshalb + Verb + Subjekt + Folge",
+    exampleDe: "Ich bin müde. Deshalb bleibe ich zu Hause.",
+    exampleEs: "Estoy cansado. Por eso me quedo en casa.",
   },
   {
+    id: "wenn",
     wort: "wenn",
-    literal: "si",
-    bedeutung:
-      "Wenn es regnet, bleibe ich zu Hause. / Si llueve, me quedo en casa.",
+    literal: "si / cuando",
     category: "Konditional",
+    level: "A2",
+    verbPosition: "Satzende",
+    structure: "Wenn + Subjekt + ... + Verb, Hauptsatz",
+    exampleDe: "Wenn es regnet, bleibe ich zu Hause.",
+    exampleEs: "Si llueve, me quedo en casa.",
   },
   {
+    id: "falls",
     wort: "falls",
     literal: "en caso de que",
-    bedeutung:
-      "Falls du Hilfe brauchst, ruf mich an. / En caso de que necesites ayuda, llámame.",
     category: "Konditional",
+    level: "B1",
+    verbPosition: "Satzende",
+    structure: "Falls + Subjekt + ... + Verb, Hauptsatz",
+    exampleDe: "Falls du Hilfe brauchst, ruf mich an.",
+    exampleEs: "En caso de que necesites ayuda, llámame.",
   },
   {
-    wort: "also",
-    literal: "entonces / por lo tanto",
-    bedeutung:
-      "Er hat viel gelernt, also hat er die Prüfung bestanden. / Ha estudiado mucho, entonces aprobó el examen.",
-    category: "Konsekutiv",
-  },
-  {
+    id: "sodass",
     wort: "sodass",
     literal: "de modo que",
-    bedeutung:
-      "Es regnete stark, sodass wir nicht rausgehen konnten. / Llovía fuerte, de modo que no pudimos salir.",
     category: "Konsekutiv",
+    level: "B1",
+    verbPosition: "Satzende",
+    structure: "Hauptsatz, sodass + Subjekt + ... + Verb",
+    exampleDe: "Es regnete stark, sodass wir zu Hause blieben.",
+    exampleEs: "Llovía mucho, de modo que nos quedamos en casa.",
   },
   {
+    id: "damit",
     wort: "damit",
     literal: "para que",
-    bedeutung:
-      "Ich lerne, damit ich die Prüfung bestehe. / Estudio para que apruebe el examen.",
     category: "Final",
+    level: "B1",
+    verbPosition: "Satzende",
+    structure: "Hauptsatz, damit + Subjekt + ... + Verb",
+    exampleDe: "Ich lerne viel, damit ich die Prüfung bestehe.",
+    exampleEs: "Estudio mucho para aprobar el examen.",
   },
   {
+    id: "um-zu",
     wort: "um … zu",
     literal: "para + infinitivo",
-    bedeutung:
-      "Ich lerne, um die Prüfung zu bestehen. / Estudio para aprobar el examen.",
     category: "Final",
+    level: "B1",
+    verbPosition: "Satzende",
+    structure: "Hauptsatz, um + ... + zu + Infinitiv",
+    exampleDe: "Ich lerne viel, um die Prüfung zu bestehen.",
+    exampleEs: "Estudio mucho para aprobar el examen.",
   },
   {
+    id: "bevor",
     wort: "bevor",
     literal: "antes de que",
-    bedeutung:
-      "Bevor ich ins Bett gehe, lese ich ein Buch. / Antes de que me acueste, leo un libro.",
     category: "Temporal",
+    level: "A2",
+    verbPosition: "Satzende",
+    structure: "Bevor + Subjekt + ... + Verb, Hauptsatz",
+    exampleDe: "Bevor ich schlafe, lese ich ein Buch.",
+    exampleEs: "Antes de dormir, leo un libro.",
   },
   {
+    id: "nachdem",
     wort: "nachdem",
     literal: "después de que",
-    bedeutung:
-      "Nachdem ich gegessen habe, gehe ich spazieren. / Después de que comí, salí a pasear.",
     category: "Temporal",
+    level: "B1",
+    verbPosition: "Satzende",
+    structure: "Nachdem + Subjekt + ... + Verb, Hauptsatz",
+    exampleDe: "Nachdem ich gegessen habe, gehe ich spazieren.",
+    exampleEs: "Después de comer, salgo a pasear.",
   },
   {
+    id: "waehrend",
     wort: "während",
     literal: "mientras",
-    bedeutung:
-      "Während ich koche, höre ich Musik. / Mientras cocino, escucho música.",
     category: "Temporal",
+    level: "B1",
+    verbPosition: "Satzende",
+    structure: "Während + Subjekt + ... + Verb, Hauptsatz",
+    exampleDe: "Während ich koche, höre ich Musik.",
+    exampleEs: "Mientras cocino, escucho música.",
   },
   {
-    wort: "sobald",
-    literal: "tan pronto como",
-    bedeutung:
-      "Sobald ich Zeit habe, rufe ich dich an. / Tan pronto como tenga tiempo, te llamo.",
+    id: "als",
+    wort: "als",
+    literal: "cuando (una vez en el pasado)",
     category: "Temporal",
+    level: "A2",
+    verbPosition: "Satzende",
+    structure: "Als + Subjekt + ... + Verb, Hauptsatz",
+    exampleDe: "Als ich klein war, wohnte ich in Bern.",
+    exampleEs: "Cuando era pequeño, vivía en Berna.",
+  },
+];
+
+export const connectorComparisons: ConnectorComparison[] = [
+  {
+    id: "weil-denn",
+    title: "weil oder denn?",
+    description: "Beide nennen einen Grund, aber der Satzbau ist anders.",
+    left: {
+      connector: "weil",
+      rule: "Nebensatz: Verb am Ende",
+      example: "Ich gehe, weil ich müde bin.",
+    },
+    right: {
+      connector: "denn",
+      rule: "Hauptsatz: normale Wortstellung",
+      example: "Ich gehe, denn ich bin müde.",
+    },
   },
   {
-    wort: "bis",
-    literal: "hasta que",
-    bedeutung: "Ich warte, bis du kommst. / Espero hasta que vengas.",
-    category: "Temporal",
+    id: "obwohl-trotzdem",
+    title: "obwohl oder trotzdem?",
+    description: "Gleicher Gegensatz, zwei verschiedene Satzmuster.",
+    left: {
+      connector: "obwohl",
+      rule: "Nebensatz: Verb am Ende",
+      example: "Obwohl es regnet, gehe ich raus.",
+    },
+    right: {
+      connector: "trotzdem",
+      rule: "Adverb: Verb direkt danach",
+      example: "Es regnet. Trotzdem gehe ich raus.",
+    },
+  },
+  {
+    id: "wenn-als-wann",
+    title: "wenn, als oder wann?",
+    description: "Bedingung/Wiederholung, einmalige Vergangenheit oder Frage.",
+    left: {
+      connector: "wenn / als",
+      rule: "wenn: wiederholt; als: einmal früher",
+      example: "Wenn ich Zeit habe ... / Als ich 18 war ...",
+    },
+    right: {
+      connector: "wann",
+      rule: "Frage oder indirekte Frage",
+      example: "Wann kommst du? Ich weiß nicht, wann er kommt.",
+    },
+  },
+];
+
+export const sentenceExercises: SentenceExercise[] = [
+  {
+    id: "combine-weil",
+    first: "Ich lerne jeden Tag.",
+    second: "Ich möchte die Prüfung bestehen.",
+    connector: "weil",
+    answer: "Ich lerne jeden Tag, weil ich die Prüfung bestehen möchte.",
+  },
+  {
+    id: "combine-obwohl",
+    first: "Es ist kalt.",
+    second: "Wir sitzen draußen.",
+    connector: "obwohl",
+    answer: "Obwohl es kalt ist, sitzen wir draußen.",
+  },
+  {
+    id: "combine-deshalb",
+    first: "Der Zug hat Verspätung.",
+    second: "Ich komme später.",
+    connector: "deshalb",
+    answer: "Der Zug hat Verspätung. Deshalb komme ich später.",
+  },
+  {
+    id: "combine-damit",
+    first: "Ich spreche langsam.",
+    second: "Du kannst mich verstehen.",
+    connector: "damit",
+    answer: "Ich spreche langsam, damit du mich verstehen kannst.",
+  },
+];
+
+export const quizQuestions: QuizQuestion[] = [
+  {
+    id: "quiz-1",
+    sentence: "Ich nehme einen Schirm mit, ___ es später regnet.",
+    options: ["falls", "obwohl", "deshalb"],
+    answer: "falls",
+    explanation: "„falls“ drückt eine mögliche Bedingung aus.",
+  },
+  {
+    id: "quiz-2",
+    sentence: "Sie war krank. ___ ging sie zur Arbeit.",
+    options: ["Weil", "Trotzdem", "Damit"],
+    answer: "Trotzdem",
+    explanation: "Der zweite Satz steht im Gegensatz zum ersten.",
+  },
+  {
+    id: "quiz-3",
+    sentence: "Ich rufe dich an, ___ ich angekommen bin.",
+    options: ["sobald", "aber", "denn"],
+    answer: "sobald",
+    explanation: "„sobald“ bedeutet: unmittelbar nach diesem Zeitpunkt.",
+  },
+  {
+    id: "quiz-4",
+    sentence: "Er übt viel, ___ er sicherer sprechen kann.",
+    options: ["damit", "trotzdem", "während"],
+    answer: "damit",
+    explanation: "„damit“ nennt ein Ziel.",
+  },
+];
+
+export const wordOrderExercises: WordOrderExercise[] = [
+  {
+    id: "order-1",
+    words: ["weil", "ich", "heute", "arbeiten", "muss"],
+    answer: "weil ich heute arbeiten muss",
+    hint: "Nach „weil“ steht das konjugierte Verb am Ende.",
+  },
+  {
+    id: "order-2",
+    words: ["deshalb", "bleibe", "ich", "zu Hause"],
+    answer: "deshalb bleibe ich zu Hause",
+    hint: "Nach „deshalb“ kommt sofort das Verb.",
+  },
+  {
+    id: "order-3",
+    words: ["obwohl", "sie", "keine Zeit", "hat"],
+    answer: "obwohl sie keine Zeit hat",
+    hint: "„obwohl“ leitet einen Nebensatz ein.",
+  },
+];
+
+export const transformationExercises: TransformationExercise[] = [
+  {
+    id: "transform-1",
+    source: "Ich bleibe zu Hause, weil ich krank bin.",
+    from: "weil",
+    to: "deshalb",
+    answer: "Ich bin krank. Deshalb bleibe ich zu Hause.",
+  },
+  {
+    id: "transform-2",
+    source: "Obwohl es regnet, fahren wir Fahrrad.",
+    from: "obwohl",
+    to: "trotzdem",
+    answer: "Es regnet. Trotzdem fahren wir Fahrrad.",
+  },
+  {
+    id: "transform-3",
+    source: "Ich lerne viel, damit ich die Prüfung bestehe.",
+    from: "damit",
+    to: "um … zu",
+    answer: "Ich lerne viel, um die Prüfung zu bestehen.",
+  },
+];
+
+export const mistakeExercises: MistakeExercise[] = [
+  {
+    id: "mistake-1",
+    wrong: "Weil ich bin müde, gehe ich schlafen.",
+    correct: "Weil ich müde bin, gehe ich schlafen.",
+    explanation: "Im Nebensatz steht das konjugierte Verb am Ende.",
+  },
+  {
+    id: "mistake-2",
+    wrong: "Es regnet. Trotzdem wir gehen spazieren.",
+    correct: "Es regnet. Trotzdem gehen wir spazieren.",
+    explanation: "Nach „trotzdem“ steht das Verb auf Position 2.",
+  },
+  {
+    id: "mistake-3",
+    wrong: "Ich lerne, um ich die Prüfung bestehe.",
+    correct: "Ich lerne, um die Prüfung zu bestehen.",
+    explanation: "„um … zu“ braucht dasselbe Subjekt und einen Infinitiv.",
+  },
+  {
+    id: "mistake-4",
+    wrong: "Als ich jeden Sommer in Spanien war, schwamm ich viel.",
+    correct: "Wenn ich jeden Sommer in Spanien war, schwamm ich viel.",
+    explanation: "Für wiederholte Ereignisse benutzt man „wenn“, nicht „als“.",
   },
 ];

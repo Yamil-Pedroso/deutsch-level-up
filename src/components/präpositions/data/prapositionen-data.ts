@@ -184,6 +184,12 @@ export const verbPraepositionenData: VerbPraepositionItem[] = [
     beispiel: "Ich lade(invitar) dich auf einen Kaffee ein.",
   },
   {
+    verb: "sich konzentrieren",
+    praeposition: "auf",
+    kasus: "Akk",
+    beispiel: "Ich konzentriere(concentrarse) mich auf meine Prüfung.",
+  },
+  {
     verb: "sich interessieren",
     praeposition: "für",
     kasus: "Akk",
@@ -314,6 +320,18 @@ export const verbPraepositionenData: VerbPraepositionItem[] = [
     praeposition: "über",
     kasus: "Akk",
     beispiel: "Wir diskutieren(discutir) über das neue Gesetz.",
+  },
+  {
+    verb: "verfügen",
+    praeposition: "über",
+    kasus: "Akk",
+    beispiel: "Das Hotel verfügt(disponer) über einen großen Parkplatz.",
+  },
+  {
+    verb: "klagen",
+    praeposition: "über",
+    kasus: "Akk",
+    beispiel: "Viele Anwohner klagen(quejarse) über den Verkehrslärm.",
   },
   {
     verb: "gehen",
@@ -578,6 +596,12 @@ export const verbPraepositionenData: VerbPraepositionItem[] = [
     praeposition: "mit",
     kasus: "Dat",
     beispiel: "Ich diskutiere(discutir) mit meiner Kollegin.",
+  },
+  {
+    verb: "sich treffen",
+    praeposition: "mit",
+    kasus: "Dat",
+    beispiel: "Ich treffe(encontrarse) mich morgen mit meinen Freunden.",
   },
   {
     verb: "fragen",
@@ -1159,6 +1183,7 @@ export const importantVerbPraepositionGroups: ImportantVerbPraepositionGroup[] =
       "verzichten auf",
       "achten auf",
       "einladen auf",
+      "sich konzentrieren auf",
     ],
   },
   {
@@ -1196,6 +1221,8 @@ export const importantVerbPraepositionGroups: ImportantVerbPraepositionGroup[] =
       "sich streiten über",
       "staunen über",
       "diskutieren über",
+      "verfügen über",
+      "klagen über",
     ],
   },
   {
@@ -1260,6 +1287,7 @@ export const importantVerbPraepositionGroups: ImportantVerbPraepositionGroup[] =
       "rechnen mit",
       "handeln mit",
       "diskutieren mit",
+      "sich treffen mit",
     ],
   },
   {

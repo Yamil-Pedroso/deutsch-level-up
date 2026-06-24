@@ -7,6 +7,5 @@ export const menuItems: MenuItem[] = [
   { name: "Körpergrafik", link: "/graphik" },
   { name: "Pronominaladverbien", link: "/da-woerter" },
   { name: "Konnektoren", link: "/konnectoren" },
-  { name: "Wo-Wörter", link: "/wo-woerter" },
   { name: "Grammatik und Formulierungen", link: "/grammar-formulierungen" },
 ];
