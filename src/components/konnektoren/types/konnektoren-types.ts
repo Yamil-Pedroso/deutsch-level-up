@@ -5,10 +5,17 @@ export type KonnektorCategory =
   | "Konditional"
   | "Konsekutiv"
   | "Final"
-  | "Temporal";
+  | "Temporal"
+  | "Objektsatz"
+  | "Präposition";
 
 export type LanguageLevel = "A1" | "A2" | "B1" | "B2";
-export type VerbPosition = "Position 2" | "Satzende" | "Unverändert";
+export type VerbPosition =
+  | "Position 2"
+  | "Satzende"
+  | "Unverändert"
+  | "Genitiv"
+  | "Infinitiv mit zu";
 
 export type KonnektorItem = {
   id: string;
@@ -20,6 +27,7 @@ export type KonnektorItem = {
   structure: string;
   exampleDe: string;
   exampleEs: string;
+  exampleEn: string;
 };
 
 export type ConnectorComparison = {

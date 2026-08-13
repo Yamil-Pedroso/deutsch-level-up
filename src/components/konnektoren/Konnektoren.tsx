@@ -1,11 +1,13 @@
 import { KonnektorenLibrary } from "./KonnektorenLibrary";
 import { KonnektorenProgress } from "./KonnektorenProgress";
+import { KonnektorenTelcGuide } from "./KonnektorenTelcGuide";
 import { KonnektorenTrainer } from "./KonnektorenTrainer";
 import { SatzbauVisualizer } from "./SatzbauVisualizer";
 import { useKonnektorenProgress } from "./hooks/useKonnektorenProgress";
 
 const navigation = [
   ["bibliothek", "Bibliothek"],
+  ["telc-guide", "TELC B1"],
   ["satzbau", "Satzbau"],
   ["training", "Training"],
   ["fortschritt", "Fortschritt"],
@@ -27,7 +29,7 @@ function Konnektoren() {
   return (
     <main className="min-h-screen bg-[#eadcc3] px-3 py-6 text-[#17130c] sm:px-6 lg:px-10">
       <section className="mx-auto w-full max-w-[1600px] overflow-hidden border-2 border-[#17130c] bg-[#f8edd6] shadow-[4px_4px_0_#17130c] sm:shadow-[10px_10px_0_#17130c]">
-        <header className="border-b-2 border-[#17130c] bg-[#ffe130] p-4 sm:p-7 lg:sticky lg:top-0 lg:z-30 lg:shadow-[0_7px_0_#17130c]">
+        <header className="sticky top-0 z-30 border-b-2 border-[#17130c] bg-[#ffe130] p-4 shadow-[0_7px_0_#17130c] sm:p-7">
           <div className="flex flex-wrap items-end justify-between gap-5">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.22em]">Deutsch Studio / Konnektoren</p>
@@ -58,6 +60,7 @@ function Konnektoren() {
         </header>
 
         <KonnektorenLibrary progress={progress} onToggle={toggleListItem} />
+        <KonnektorenTelcGuide />
         <SatzbauVisualizer />
         <KonnektorenTrainer onComplete={completeActivity} onQuizAnswer={recordQuizAnswer} />
         <KonnektorenProgress progress={progress} onReset={resetProgress} />

@@ -27,6 +27,8 @@ const categories: CategoryFilter[] = [
   "Konsekutiv",
   "Final",
   "Temporal",
+  "Objektsatz",
+  "Präposition",
 ];
 
 export function KonnektorenLibrary({ progress, onToggle }: LibraryProps) {
@@ -95,7 +97,7 @@ export function KonnektorenLibrary({ progress, onToggle }: LibraryProps) {
           <FilterSelect
             label="Verbposition"
             onChange={setPosition}
-            options={["Alle", "Position 2", "Satzende", "Unverändert"]}
+            options={["Alle", "Position 2", "Satzende", "Unverändert", "Genitiv", "Infinitiv mit zu"]}
             value={position}
           />
         </div>
@@ -150,7 +152,8 @@ export function KonnektorenLibrary({ progress, onToggle }: LibraryProps) {
             <p className="mt-2 font-bold">{selected.structure}</p>
           </div>
           <p className="mt-5 text-lg font-black leading-relaxed">{selected.exampleDe}</p>
-          <p className="mt-2 text-sm font-semibold">{selected.exampleEs}</p>
+          <p className="mt-2 text-sm font-semibold">ES: {selected.exampleEs}</p>
+          <p className="text-sm font-semibold">EN: {selected.exampleEn}</p>
           <div className="mt-5 flex flex-wrap gap-2">
             <SpeakButton text={selected.exampleDe} />
             <button

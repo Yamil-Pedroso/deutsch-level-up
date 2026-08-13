@@ -8,4 +8,7 @@ export const menuItems: MenuItem[] = [
   { name: "Pronominaladverbien", link: "/da-woerter" },
   { name: "Konnektoren", link: "/konnectoren" },
   { name: "Grammatik und Formulierungen", link: "/grammar-formulierungen" },
+  { name: "Passivkonstruktion", link: "/passiv-konstruktion" },
+  { name: "Konjunktiv II", link: "/konjunktiv-ii" },
+  { name: "Zeitformen", link: "/german-grammar-tenses" },
 ];

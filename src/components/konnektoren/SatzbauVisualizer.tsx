@@ -42,7 +42,7 @@ export function SatzbauVisualizer() {
 
   return (
     <section className="scroll-mt-28 border-b-2 border-[#17130c] bg-[#cfeeff] p-4 sm:p-7" id="satzbau">
-      <p className="text-xs font-black uppercase tracking-[0.2em]">02 · Satzbau-Visualizer</p>
+      <p className="text-xs font-black uppercase tracking-[0.2em]">03 · Satzbau-Visualizer</p>
       <div className="mt-2 flex flex-wrap items-end justify-between gap-4">
         <h2 className="text-3xl font-black">Wo steht das Verb?</h2>
         <div className="flex flex-wrap gap-2">

@@ -13,6 +13,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "woran?",
     antwort: "daran",
     translation: "¿en qué?",
+    translationEn: "about what? / on what?",
     beispiel: "Woran denkst du? - Ich denke daran.",
   },
   {
@@ -21,6 +22,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "worauf?",
     antwort: "darauf",
     translation: "¿sobre qué? / ¿a qué?",
+    translationEn: "what on? / what for?",
     beispiel: "Worauf wartest du? - Ich warte darauf.",
   },
   {
@@ -29,6 +31,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "woraus?",
     antwort: "daraus",
     translation: "¿de qué? / ¿a partir de qué?",
+    translationEn: "from what? / out of what?",
     beispiel: "Woraus besteht das? - Es besteht daraus.",
   },
   {
@@ -37,6 +40,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "wobei?",
     antwort: "dabei",
     translation: "¿en qué? / ¿con qué actividad?",
+    translationEn: "with what? / during what activity?",
     beispiel: "Wobei hilfst du mir? - Ich helfe dir dabei.",
   },
   {
@@ -45,6 +49,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "wodurch?",
     antwort: "dadurch",
     translation: "¿por qué medio? / ¿a través de qué?",
+    translationEn: "by what means? / through what?",
     beispiel: "Wodurch ist das passiert? - Dadurch.",
   },
   {
@@ -53,6 +58,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "wofür?",
     antwort: "dafür",
     translation: "¿para qué? / ¿por qué?",
+    translationEn: "what for? / for what?",
     beispiel: "Wofür interessierst du dich? - Dafür.",
   },
   {
@@ -61,6 +67,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "wogegen?",
     antwort: "dagegen",
     translation: "¿contra qué?",
+    translationEn: "against what?",
     beispiel: "Wogegen kämpft er? - Dagegen.",
   },
   {
@@ -69,6 +76,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "wohinter?",
     antwort: "dahinter",
     translation: "¿detrás de qué?",
+    translationEn: "behind what?",
     beispiel: "Was steckt dahinter? - Das steckt dahinter.",
   },
   {
@@ -77,6 +85,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "worin?",
     antwort: "darin",
     translation: "¿en qué? / ¿dentro de qué?",
+    translationEn: "in what? / inside what?",
     beispiel: "Worin besteht das Problem? - Darin.",
   },
   {
@@ -85,6 +94,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "womit?",
     antwort: "damit",
     translation: "¿con qué?",
+    translationEn: "with what?",
     beispiel: "Womit fängst du an? - Damit.",
   },
   {
@@ -93,6 +103,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "wonach?",
     antwort: "danach",
     translation: "¿qué? / ¿en busca de qué?",
+    translationEn: "what after? / in search of what?",
     beispiel: "Wonach suchst du? - Danach.",
   },
   {
@@ -101,6 +112,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "woneben?",
     antwort: "daneben",
     translation: "¿al lado de qué?",
+    translationEn: "next to what?",
     beispiel: "Was liegt neben dem Buch? - Das liegt daneben.",
   },
   {
@@ -109,6 +121,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "worüber?",
     antwort: "darüber",
     translation: "¿sobre qué? / ¿acerca de qué?",
+    translationEn: "about what?",
     beispiel: "Worüber sprecht ihr? - Darüber.",
   },
   {
@@ -117,6 +130,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "worum?",
     antwort: "darum",
     translation: "¿de qué se trata? / ¿alrededor de qué?",
+    translationEn: "what is it about? / around what?",
     beispiel: "Worum kümmerst du dich? - Darum.",
   },
   {
@@ -125,6 +139,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "worunter?",
     antwort: "darunter",
     translation: "¿de qué se sufre? / ¿debajo de qué?",
+    translationEn: "what does one suffer from? / under what?",
     beispiel: "Worunter leidet er? - Darunter.",
   },
   {
@@ -133,6 +148,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "wovon?",
     antwort: "davon",
     translation: "¿de qué?",
+    translationEn: "of what? / from what?",
     beispiel: "Wovon träumst du? - Davon.",
   },
   {
@@ -141,6 +157,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "wovor?",
     antwort: "davor",
     translation: "¿ante qué? / ¿de qué?",
+    translationEn: "in front of what? / afraid of what?",
     beispiel: "Wovor hast du Angst? - Davor.",
   },
   {
@@ -149,6 +166,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "wozu?",
     antwort: "dazu",
     translation: "¿para qué?",
+    translationEn: "what for?",
     beispiel: "Wozu dient das? - Dazu.",
   },
   {
@@ -157,6 +175,7 @@ export const daWoerterData: DaWortItem[] = [
     frage: "wozwischen?",
     antwort: "dazwischen",
     translation: "¿entre qué?",
+    translationEn: "between what?",
     beispiel: "Was liegt zwischen den Häusern? - Dazwischen.",
   },
 ];
@@ -167,72 +186,84 @@ export const importantDaWoerter: ImportantDaWortItem[] = [
     frage: "Woran denkst du?",
     antwort: "Ich denke daran.",
     translation: "Pienso en eso.",
+    translationEn: "I am thinking about that.",
   },
   {
     label: "auf (+ Akk)",
     frage: "Worauf wartest du?",
     antwort: "Ich warte darauf.",
     translation: "Espero eso.",
+    translationEn: "I am waiting for that.",
   },
   {
     label: "für (+ Akk)",
     frage: "Wofür interessierst du dich?",
     antwort: "Ich interessiere mich dafür.",
     translation: "Me interesa eso.",
+    translationEn: "I am interested in that.",
   },
   {
     label: "über (+ Akk)",
     frage: "Worüber sprecht ihr?",
     antwort: "Wir sprechen darüber.",
     translation: "Hablamos sobre eso.",
+    translationEn: "We are talking about that.",
   },
   {
     label: "um (+ Akk)",
     frage: "Worum kümmerst du dich?",
     antwort: "Ich kümmere mich darum.",
     translation: "Me ocupo de eso.",
+    translationEn: "I take care of that.",
   },
   {
     label: "mit (+ Dat)",
     frage: "Womit fängst du an?",
     antwort: "Ich fange damit an.",
     translation: "Empiezo con eso.",
+    translationEn: "I start with that.",
   },
   {
     label: "von (+ Dat)",
     frage: "Wovon träumst du?",
     antwort: "Ich träume davon.",
     translation: "Sueño con eso.",
+    translationEn: "I dream about that.",
   },
   {
     label: "zu (+ Dat)",
     frage: "Wozu brauchst du das?",
     antwort: "Ich brauche das dazu.",
     translation: "Necesito eso para ello.",
+    translationEn: "I need that for it.",
   },
   {
     label: "vor (+ Dat)",
     frage: "Wovor hast du Angst?",
     antwort: "Ich habe davor Angst.",
     translation: "Tengo miedo de eso.",
+    translationEn: "I am afraid of that.",
   },
   {
     label: "unter (+ Dat)",
     frage: "Worunter leidest du?",
     antwort: "Ich leide darunter.",
     translation: "Sufro por eso.",
+    translationEn: "I suffer from that.",
   },
   {
     label: "in (+ Dat)",
     frage: "Worin besteht das Problem?",
     antwort: "Das Problem besteht darin, dass niemand Zeit hat.",
     translation: "El problema consiste en que nadie tiene tiempo.",
+    translationEn: "The problem consists in the fact that nobody has time.",
   },
   {
     label: "zwischen (+ Dat)",
     frage: "Was steht zwischen den beiden Häusern?",
     antwort: "Dazwischen steht ein Baum.",
     translation: "Entre ellos hay un árbol.",
+    translationEn: "There is a tree between them.",
   },
 ];
 
@@ -268,16 +299,19 @@ export const genitivExamples: GenitivExample[] = [
     frage: "Weswegen bist du traurig?",
     antwort: "Deswegen bin ich traurig.",
     translation: "Por eso estoy triste.",
+    translationEn: "That is why I am sad.",
   },
   {
     frage: "Was machst du anstatt Sport?",
     antwort: "Stattdessen lese ich ein Buch.",
     translation: "En vez de eso leo un libro.",
+    translationEn: "Instead of that, I read a book.",
   },
   {
     frage: "Was machst du während der Pause?",
     antwort: "Währenddessen höre ich Musik.",
     translation: "Mientras tanto escucho música.",
+    translationEn: "Meanwhile, I listen to music.",
   },
 ];
 

@@ -8,6 +8,9 @@ import DaWoerter from "./components/da-woerter/DaWoerter";
 import Konnectoren from "./components/konnektoren/Konnektoren";
 import GrammarFormulierungen from "./components/grammar-formulierungen/GrammarFormulierungen";
 import ScrollToTop from "./components/common/ScrollToTop";
+import PassivKonstruktion from "./components/passiv-konstruktion/PassivKonstruktion";
+import KonjunktivII from "./components/konjunktiv-ii/WuenscheHypothesenUndHoeflichkeit";
+import GermanGrammarTenses from "./components/german-grammar-tenses/GermanGrammarTenses";
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
         <Route path="/da-woerter" element={<DaWoerter />} />
         <Route path="/konnectoren" element={<Konnectoren />} />
         <Route path="/grammar-formulierungen" element={<GrammarFormulierungen />} />
+        <Route path="/passiv-konstruktion" element={<PassivKonstruktion />} />
+        <Route path="/konjunktiv-ii" element={<KonjunktivII />} />
+        <Route path="/german-grammar-tenses" element={<GermanGrammarTenses />} />
         <Route
           path="*"
           element={

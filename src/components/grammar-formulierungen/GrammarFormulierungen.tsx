@@ -154,7 +154,7 @@ const VerbTableCard = ({ resource }: VerbTableCardProps) => (
               "Präsens",
               "Präteritum",
               "Perfekt",
-              "Spanisch",
+              "Übersetzung",
             ].map((header) => (
               <th
                 className="border-b-2 border-r border-[#17130c] bg-[#ff7b2f] px-3 py-3 text-left font-black text-white last:border-r-0"
@@ -184,7 +184,10 @@ const VerbTableCard = ({ resource }: VerbTableCardProps) => (
                 {entry.perfekt}
               </td>
               <td className="border-t border-[#17130c]/50 px-3 py-3 align-top font-bold text-[#5f4d35]">
-                {entry.translation}
+                <span className="block">ES: {entry.translation}</span>
+                {entry.translationEn && (
+                  <span className="block">EN: {entry.translationEn}</span>
+                )}
               </td>
             </tr>
           ))}
@@ -245,7 +248,7 @@ const GrammarFormulierungen = () => {
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#eadcc3] px-3 py-0 text-[#17130c] sm:px-6 lg:h-screen lg:overflow-hidden lg:px-10">
       <section className="flex w-full max-w-full flex-col overflow-hidden border-2 border-[#17130c] bg-[#f8edd6] shadow-[4px_4px_0_#17130c] sm:shadow-[10px_10px_0_#17130c] lg:h-full">
-        <header className="shrink-0 border-b-2 border-[#17130c] bg-[#ffe130] p-4 sm:p-7 lg:sticky lg:top-0 lg:z-30 lg:shadow-[0_8px_0_#17130c]">
+        <header className="sticky top-0 z-30 shrink-0 border-b-2 border-[#17130c] bg-[#ffe130] p-4 shadow-[0_8px_0_#17130c] sm:p-7">
           <p className="text-xs font-black uppercase tracking-[0.22em]">
             Deutsch Studio / Grammatik
           </p>

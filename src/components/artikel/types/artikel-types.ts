@@ -14,6 +14,7 @@ export type NounItem = {
   article: Gender;
   plural: string;
   translation: string;
+  translationEn: string;
   category: string;
   level: ArtikelLevel;
   example: string;

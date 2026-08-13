@@ -36,7 +36,7 @@ export function ArtikelDictionaryProgress({
     return nounData.filter((noun) => {
       const matches =
         !normalized ||
-        [noun.noun, noun.translation, noun.plural].some((value) =>
+        [noun.noun, noun.translation, noun.translationEn, noun.plural].some((value) =>
           value.toLocaleLowerCase("de").includes(normalized),
         );
       return matches && (!onlyFavorites || progress.favorites.includes(noun.id));
@@ -82,7 +82,10 @@ export function ArtikelDictionaryProgress({
                 <div className="flex items-start justify-between gap-3">
                   <div>
                     <h3 className="text-xl font-black">{noun.article} {noun.noun}</h3>
-                    <p className="mt-1 text-sm font-bold">die {noun.plural} · {noun.translation}</p>
+                    <p className="mt-1 text-sm font-bold">die {noun.plural}</p>
+                    <p className="mt-1 text-xs font-bold text-[#5f4d35]">
+                      ES: {noun.translation} · EN: {noun.translationEn}
+                    </p>
                   </div>
                   <button aria-label={`${noun.noun} als Favorit markieren`} className="text-2xl" onClick={() => onToggle("favorites", noun.id)} type="button">
                     {progress.favorites.includes(noun.id) ? "★" : "☆"}

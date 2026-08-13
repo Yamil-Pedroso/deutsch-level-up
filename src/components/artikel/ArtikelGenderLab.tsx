@@ -81,7 +81,7 @@ function GenderTrainer({ progress, onAnswer, onToggle }: GenderLabProps) {
   };
 
   return (
-    <PracticeFrame eyebrow="03 · Der–Die–Das Trainer" title={`___ ${item.noun}`} subtitle={`${item.translation} · ${item.category} · ${item.level}`}>
+    <PracticeFrame eyebrow="03 · Der–Die–Das Trainer" title={`___ ${item.noun}`} subtitle={`ES: ${item.translation} · EN: ${item.translationEn} · ${item.category} · ${item.level}`}>
       <div className="grid gap-3 sm:grid-cols-3">
         {(["der", "die", "das"] as const).map((article) => (
           <button
@@ -238,7 +238,10 @@ function ArticleRoulette() {
       {selected && (
         <div className="mt-5 border-2 border-[#17130c] bg-[#ffe130] p-6 text-center shadow-[5px_5px_0_#17130c]">
           <p className="text-4xl font-black">{selected.article} {selected.noun}</p>
-          <p className="mt-2 font-bold">Plural: die {selected.plural} · {selected.translation}</p>
+          <p className="mt-2 font-bold">Plural: die {selected.plural}</p>
+          <p className="mt-1 text-sm font-bold text-[#5f4d35]">
+            ES: {selected.translation} · EN: {selected.translationEn}
+          </p>
         </div>
       )}
       <div className="mt-5"><PrimaryButton onClick={spin}>Roulette drehen</PrimaryButton></div>

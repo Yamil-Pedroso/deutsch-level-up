@@ -14,12 +14,14 @@ type FilterId = CategoryOption["id"];
 const categoryLabels: Record<VocabularyCategory, string> = {
   nomen: "Nomen",
   verben: "Verben",
+  adjektive: "Adjektive",
   extras: "Extra cards",
 };
 
 const categoryAccent: Record<VocabularyCategory, string> = {
   nomen: "bg-[#ffe45e]",
   verben: "bg-[#ff7b2f] text-white",
+  adjektive: "bg-[#d9f99d]",
   extras: "bg-[#fff3d8]",
 };
 
@@ -32,7 +34,7 @@ const getCategoryCount = (categoryId: FilterId) => {
 };
 
 const getSearchContent = (item: VocabularyItem) =>
-  `${item.article ?? ""} ${item.word} ${item.meaning} ${categoryLabels[item.category]}`.toLowerCase();
+  `${item.article ?? ""} ${item.word} ${item.meaning} ${item.meaningEn ?? ""} ${item.praeteritum ?? ""} ${item.partizip2 ?? ""} ${categoryLabels[item.category]}`.toLowerCase();
 
 const Wortschatz = () => {
   const [activeCategory, setActiveCategory] = useState<FilterId>("alle");
@@ -80,7 +82,7 @@ const Wortschatz = () => {
   return (
     <main className="min-h-screen bg-[#eadcc3] px-3 py-6 text-[#17130c] sm:px-6 lg:px-10">
       <section className="w-full max-w-full overflow-hidden border-2 border-[#17130c] bg-[#f8edd6] shadow-[4px_4px_0_#17130c] sm:overflow-visible sm:shadow-[10px_10px_0_#17130c]">
-        <header className="border-b-2 border-[#17130c] bg-[#ffe130] p-4 sm:p-7 lg:sticky lg:top-0 lg:z-30 lg:shadow-[0_8px_0_#17130c]">
+        <header className="sticky top-0 z-30 border-b-2 border-[#17130c] bg-[#ffe130] p-4 shadow-[0_8px_0_#17130c] sm:p-7">
           <div className="mb-6 flex flex-wrap items-center gap-3">
             <label className="flex min-w-0 basis-full flex-col items-start gap-2 border-2 border-[#17130c] bg-[#fffaf0] px-3 py-3 shadow-[3px_3px_0_#17130c] sm:basis-auto sm:flex-1 sm:flex-row sm:items-center sm:gap-3 sm:px-4">
               <span className="text-xs font-black uppercase tracking-[0.16em]">
@@ -188,8 +190,18 @@ const Wortschatz = () => {
                         {item.word}
                       </span>
                       <span className="block truncate text-xs font-bold text-[#6f583b]">
-                        {item.meaning}
+                        ES: {item.meaning}
                       </span>
+                      {item.meaningEn && (
+                        <span className="block truncate text-xs font-bold text-[#6f583b]">
+                          EN: {item.meaningEn}
+                        </span>
+                      )}
+                      {item.praeteritum && item.partizip2 && (
+                        <span className="mt-1 block truncate text-[11px] font-black text-[#4a3922]">
+                          Prät.: {item.praeteritum} · P II: {item.partizip2}
+                        </span>
+                      )}
                     </span>
                     <span className="text-lg font-black text-[#ff6d1a]">+</span>
                   </button>
@@ -224,8 +236,24 @@ const Wortschatz = () => {
                 {selectedWord.word}
               </h3>
               <p className="mt-4 border-t border-white/60 pt-4 text-base font-bold leading-relaxed">
-                {selectedWord.meaning}
+                ES: {selectedWord.meaning}
               </p>
+              {selectedWord.meaningEn && (
+                <p className="mt-1 text-base font-bold leading-relaxed">
+                  EN: {selectedWord.meaningEn}
+                </p>
+              )}
+              {selectedWord.praeteritum &&
+                selectedWord.partizip2 && (
+                  <div className="mt-4 grid gap-2 border-t border-white/60 pt-4 text-sm font-black sm:grid-cols-2">
+                    <span className="border border-white/80 px-3 py-2">
+                      Präteritum: {selectedWord.praeteritum}
+                    </span>
+                    <span className="border border-white/80 px-3 py-2">
+                      Partizip II: {selectedWord.partizip2}
+                    </span>
+                  </div>
+                )}
             </div>
 
             <div className="mt-5 border-2 border-[#17130c] bg-[#ffe45e] p-4 shadow-[4px_4px_0_#17130c]">

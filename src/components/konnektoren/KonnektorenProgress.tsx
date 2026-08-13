@@ -14,7 +14,7 @@ export function KonnektorenProgress({ progress, onReset }: ProgressProps) {
 
   return (
     <section className="scroll-mt-28 bg-[#ffe130] p-4 sm:p-7" id="fortschritt">
-      <p className="text-xs font-black uppercase tracking-[0.2em]">09–10 · Favoriten & Fortschritt</p>
+      <p className="text-xs font-black uppercase tracking-[0.2em]">10 · Favoriten & Fortschritt</p>
       <div className="mt-2 flex flex-wrap items-end justify-between gap-4">
         <div>
           <h2 className="text-3xl font-black">Dein Lernstand</h2>

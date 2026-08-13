@@ -26,6 +26,7 @@ export type GrammarVerbEntry = {
   praeteritum: string;
   perfekt: string;
   translation: string;
+  translationEn?: string;
 };
 
 export type GrammarVocabularyResource = {

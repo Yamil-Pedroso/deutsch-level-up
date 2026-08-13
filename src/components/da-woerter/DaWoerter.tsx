@@ -10,7 +10,7 @@ const DaWoerter = () => {
   return (
     <main className="min-h-screen bg-[#eadcc3] px-3 py-6 text-[#17130c] sm:px-6 lg:px-10">
       <section className="w-full max-w-full overflow-hidden border-2 border-[#17130c] bg-[#f8edd6] shadow-[4px_4px_0_#17130c] sm:overflow-visible sm:shadow-[10px_10px_0_#17130c]">
-        <header className="border-b-2 border-[#17130c] bg-[#ffe130] p-4 sm:p-7 lg:sticky lg:top-0 lg:z-30 lg:shadow-[0_8px_0_#17130c]">
+        <header className="sticky top-0 z-30 border-b-2 border-[#17130c] bg-[#ffe130] p-4 shadow-[0_8px_0_#17130c] sm:p-7">
           <p className="text-xs font-black uppercase tracking-[0.22em]">
             Deutsch Studio / Pronominaladverbien
           </p>
@@ -82,7 +82,8 @@ const DaWoerter = () => {
                       {item.antwort}
                     </td>
                     <td className="px-3 py-3 font-bold text-[#5f4d35]">
-                      {item.translation}
+                      <span className="block">ES: {item.translation}</span>
+                      <span className="block">EN: {item.translationEn}</span>
                     </td>
                     <td className="px-3 py-3 font-semibold text-[#5f4d35]">
                       {item.beispiel}
@@ -118,7 +119,8 @@ const DaWoerter = () => {
                   {item.antwort}
                 </p>
                 <p className="mt-3 border border-[#17130c] bg-[#fffaf0] px-3 py-2 text-sm font-bold text-[#4a3922]">
-                  {item.translation}
+                  <span className="block">ES: {item.translation}</span>
+                  <span className="block">EN: {item.translationEn}</span>
                 </p>
               </article>
             ))}
@@ -186,7 +188,8 @@ const DaWoerter = () => {
                     {item.antwort}
                   </p>
                   <p className="mt-3 border-t border-dashed border-[#17130c]/40 pt-3 text-sm font-bold">
-                    {item.translation}
+                    <span className="block">ES: {item.translation}</span>
+                    <span className="block">EN: {item.translationEn}</span>
                   </p>
                 </article>
               ))}

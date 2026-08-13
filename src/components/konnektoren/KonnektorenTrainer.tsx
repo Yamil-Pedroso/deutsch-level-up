@@ -32,7 +32,7 @@ export function KonnektorenTrainer({ onComplete, onQuizAnswer }: TrainerProps) {
   return (
     <section className="scroll-mt-28 border-b-2 border-[#17130c] bg-[#fffaf0]" id="training">
       <div className="border-b-2 border-[#17130c] bg-[#17130c] p-4 text-white sm:p-7">
-        <p className="text-xs font-black uppercase tracking-[0.2em] text-[#ffe130]">03–08 · Trainingslabor</p>
+        <p className="text-xs font-black uppercase tracking-[0.2em] text-[#ffe130]">04–09 · Trainingslabor</p>
         <h2 className="mt-2 text-3xl font-black">Vom Erkennen zum Anwenden</h2>
         <div className="mt-5 flex gap-2 overflow-x-auto pb-2">
           {modes.map((item) => (
@@ -67,7 +67,7 @@ function ComparisonModule({ onComplete }: Pick<TrainerProps, "onComplete">) {
   const item = connectorComparisons[index];
 
   return (
-    <PracticeShell eyebrow="03 · Konnektoren vergleichen" title={item.title} description={item.description}>
+    <PracticeShell eyebrow="04 · Konnektoren vergleichen" title={item.title} description={item.description}>
       <div className="grid gap-4 md:grid-cols-2">
         {[item.left, item.right].map((side, sideIndex) => (
           <article className={`border-2 border-[#17130c] p-5 shadow-[4px_4px_0_#17130c] ${sideIndex ? "bg-[#9dd9ff]" : "bg-[#ffe130]"}`} key={side.connector}>
@@ -102,7 +102,7 @@ function CombineModule({ onComplete }: Pick<TrainerProps, "onComplete">) {
   };
 
   return (
-    <PracticeShell eyebrow="04 · Sätze verbinden" title={`Verbinde mit „${item.connector}“`} description="Achte besonders auf die Position des Verbs.">
+    <PracticeShell eyebrow="05 · Sätze verbinden" title={`Verbinde mit „${item.connector}“`} description="Achte besonders auf die Position des Verbs.">
       <div className="grid gap-3 md:grid-cols-[1fr_auto_1fr] md:items-center">
         <SentenceBox>{item.first}</SentenceBox>
         <span className="text-center text-3xl font-black text-[#ff6d1a]">+</span>
@@ -149,7 +149,7 @@ function QuizModule({ onComplete, onQuizAnswer }: TrainerProps) {
   };
 
   return (
-    <PracticeShell eyebrow="05 · Kontext-Quiz" title={`Frage ${index + 1} von ${quizQuestions.length}`} description="Welcher Konnektor passt semantisch und grammatisch?">
+    <PracticeShell eyebrow="06 · Kontext-Quiz" title={`Frage ${index + 1} von ${quizQuestions.length}`} description="Welcher Konnektor passt semantisch und grammatisch?">
       <p className="border-2 border-[#17130c] bg-[#ffe130] p-5 text-xl font-black shadow-[4px_4px_0_#17130c]">{item.sentence}</p>
       <div className="mt-5 grid gap-3 sm:grid-cols-3">
         {item.options.map((option) => {

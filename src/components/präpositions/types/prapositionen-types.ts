@@ -10,6 +10,7 @@ export type PraepositionItem = {
   kasus: PraepositionKasus;
   praeposition: string;
   translation: string;
+  translationEn: string;
 };
 
 export type VerbPraepositionItem = {

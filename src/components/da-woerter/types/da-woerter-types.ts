@@ -4,6 +4,7 @@ export type DaWortItem = {
   frage: string;
   antwort: string;
   translation: string;
+  translationEn: string;
   beispiel: string;
 };
 
@@ -12,6 +13,7 @@ export type ImportantDaWortItem = {
   frage: string;
   antwort: string;
   translation: string;
+  translationEn: string;
 };
 
 export type GenitivDaWortItem = {
@@ -25,6 +27,7 @@ export type GenitivExample = {
   frage: string;
   antwort: string;
   translation: string;
+  translationEn: string;
 };
 
 export type GoldenRulePair = {
