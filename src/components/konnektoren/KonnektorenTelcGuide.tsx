@@ -19,9 +19,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Das Verb steht am Ende.",
     group: "Verb am Ende",
     examples: [
-      "Ich lerne Deutsch, weil ich die TELC-Prüfung bestehen möchte.",
-      "Er bleibt zu Hause, weil er krank ist.",
-      "Wir fahren nach Bern, weil wir Urlaub haben.",
+      "Viele Korallenriffe sterben ab, weil steigende Wassertemperaturen ihr empfindliches Gleichgewicht zerstören.",
+      "Die Ausstellung wirkt politisch, weil sie koloniale Erwerbsgeschichten offenlegt.",
+      "Das Spiel überzeugt, weil es moralische Entscheidungen nicht künstlich vereinfacht.",
     ],
   },
   {
@@ -33,9 +33,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Die Wortstellung bleibt wie im Hauptsatz.",
     group: "Normale Wortstellung",
     examples: [
-      "Ich lerne Deutsch, denn ich möchte in der Schweiz arbeiten.",
-      "Wir bleiben zu Hause, denn es regnet.",
-      "Er kauft ein Auto, denn er braucht es für die Arbeit.",
+      "Die Restaurierung dauerte mehrere Jahre, denn die ursprünglichen Farbschichten waren stark beschädigt.",
+      "Das Schutzgebiet muss erweitert werden, denn viele Tierarten verlieren ihre Wanderkorridore.",
+      "Die Spielmechanik wirkt ungewöhnlich, denn sie belohnt nicht Effizienz, sondern Mitgefühl.",
     ],
   },
   {
@@ -47,9 +47,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Das Verb steht direkt nach deshalb.",
     group: "Position 2",
     examples: [
-      "Ich bin müde. Deshalb gehe ich früh ins Bett.",
-      "Es regnet. Deshalb bleiben wir zu Hause.",
-      "Ich habe viel gelernt. Deshalb bin ich zufrieden.",
+      "Der Wald verliert zunehmend alte Bäume. Deshalb verschwinden auch viele spezialisierte Insektenarten.",
+      "Die Quellenlage ist widersprüchlich. Deshalb formuliert die Historikerin ihre These sehr vorsichtig.",
+      "Die virtuelle Ausstellung ist barrierefrei gestaltet. Deshalb erreicht sie ein deutlich breiteres Publikum.",
     ],
   },
   {
@@ -61,9 +61,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Das Verb steht auf Position 2.",
     group: "Position 2",
     examples: [
-      "Er ist krank. Deswegen geht er nicht zur Arbeit.",
-      "Ich habe keine Zeit. Deswegen kann ich nicht kommen.",
-      "Die Prüfung ist schwer. Deswegen lerne ich jeden Tag.",
+      "Die Spielwelt reagiert dynamisch auf jede Entscheidung. Deswegen fühlt sich moralisches Handeln konsequent bedeutsam an.",
+      "Die Meerestemperaturen steigen weiter. Deswegen geraten viele Ökosysteme unter enormen Anpassungsdruck.",
+      "Das Gemälde wurde mehrfach übermalt. Deswegen ist seine ursprüngliche Komposition schwer zu rekonstruieren.",
     ],
   },
   {
@@ -75,9 +75,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Darum funktioniert wie deshalb/deswegen.",
     group: "Position 2",
     examples: [
-      "Ich bin müde. Darum gehe ich schlafen.",
-      "Das Wetter ist schlecht. Darum bleiben wir drinnen.",
-      "Er hat viel gearbeitet. Darum braucht er Urlaub.",
+      "Die Debatte berührt grundlegende Freiheitsbegriffe. Darum lässt sie sich nicht auf eine technische Frage reduzieren.",
+      "Der Lebensraum der Luchse ist stark fragmentiert. Darum müssen Schutzkorridore eingerichtet werden.",
+      "Die Installation arbeitet mit irritierenden Geräuschen. Darum bleibt sie den Besuchern lange im Gedächtnis.",
     ],
   },
   {
@@ -89,9 +89,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Die Wortstellung bleibt normal.",
     group: "Normale Wortstellung",
     examples: [
-      "Ich möchte kommen, aber ich habe keine Zeit.",
-      "Er ist müde, aber er arbeitet weiter.",
-      "Das Auto ist alt, aber es funktioniert gut.",
+      "Die Grafik des Spiels ist reduziert, aber die emotionale Wirkung der Handlung ist erstaunlich intensiv.",
+      "Das Kunstwerk wirkt zunächst abstrakt, aber es verweist sehr konkret auf ökologische Zerstörung.",
+      "Die Theorie ist elegant, aber sie erklärt menschliches Verhalten nur teilweise.",
     ],
   },
   {
@@ -103,9 +103,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Das Verb steht am Ende.",
     group: "Verb am Ende",
     examples: [
-      "Ich gehe spazieren, obwohl es regnet.",
-      "Er arbeitet, obwohl er krank ist.",
-      "Sie lernt Deutsch, obwohl es schwierig ist.",
+      "Obwohl die Studie methodische Schwächen hat, liefert sie wichtige Hinweise zum Artensterben.",
+      "Das Spiel bleibt spannend, obwohl es bewusst auf schnelle Belohnungssysteme verzichtet.",
+      "Obwohl das Gemälde klein ist, eröffnet es einen komplexen Blick auf höfische Machtstrukturen.",
     ],
   },
   {
@@ -117,9 +117,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Das Verb steht auf Position 2.",
     group: "Position 2",
     examples: [
-      "Es regnet. Trotzdem gehe ich spazieren.",
-      "Ich bin müde. Trotzdem lerne ich weiter.",
-      "Die Prüfung ist schwer. Trotzdem habe ich keine Angst.",
+      "Die Datenlage ist unvollständig. Trotzdem lassen sich klare Trends im Verhalten der Tiere erkennen.",
+      "Das Budget war knapp. Trotzdem entstand ein visuell und philosophisch anspruchsvolles Spiel.",
+      "Die Ausstellung ist provokant. Trotzdem vermeidet sie vereinfachende moralische Urteile.",
     ],
   },
   {
@@ -131,9 +131,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Das Verb steht am Ende.",
     group: "Verb am Ende",
     examples: [
-      "Ich glaube, dass Deutsch wichtig ist.",
-      "Er sagt, dass er morgen kommt.",
-      "Wir denken, dass die Prüfung schwierig ist.",
+      "Viele Philosophinnen argumentieren, dass Verantwortung nicht allein beim einzelnen Konsumenten beginnt.",
+      "Die Kuratorin betont, dass jedes Objekt in seiner historischen Machtstruktur betrachtet werden muss.",
+      "Forschende vermuten, dass Lichtverschmutzung das Verhalten nachtaktiver Tiere stärker beeinflusst als bisher angenommen.",
     ],
   },
   {
@@ -145,9 +145,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Das Verb steht im Nebensatz am Ende.",
     group: "Verb am Ende",
     examples: [
-      "Wenn ich Zeit habe, komme ich.",
-      "Wenn es regnet, bleibe ich zu Hause.",
-      "Ich freue mich, wenn du kommst.",
+      "Wenn virtuelle Museen barrierefrei gestaltet werden, können mehr Menschen an kultureller Bildung teilhaben.",
+      "Wenn Schutzgebiete nicht vernetzt werden, bleiben viele Tierpopulationen genetisch isoliert.",
+      "Wenn ein Spiel echte Konsequenzen simuliert, wirkt seine moralische Botschaft glaubwürdiger.",
     ],
   },
   {
@@ -159,9 +159,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Für einmalige Ereignisse in der Vergangenheit.",
     group: "Verb am Ende",
     examples: [
-      "Als ich klein war, spielte ich Fußball.",
-      "Als ich nach Zürich kam, sprach ich kein Deutsch.",
-      "Als wir Kinder waren, spielten wir draußen.",
+      "Als die Zentralperspektive in der Renaissance entwickelt wurde, veränderte sich das europäische Raumverständnis nachhaltig.",
+      "Als die ersten erzählerischen Computerspiele erschienen, wurde Interaktivität zu einem neuen kulturellen Ausdrucksmittel.",
+      "Als die industrielle Revolution begann, veränderte sich auch das philosophische Verhältnis zur Natur.",
     ],
   },
   {
@@ -173,9 +173,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Als Konnektor: Verb am Ende. Als Präposition: Genitiv.",
     group: "Verb am Ende",
     examples: [
-      "Ich höre Musik, während ich arbeite.",
-      "Er liest, während sie kocht.",
-      "Während des Kurses darf man nicht telefonieren.",
+      "Während die Spielfigur durch die Ruinen läuft, kommentiert der Erzähler die Zerbrechlichkeit historischer Erinnerung.",
+      "Während die Restauratorin die Oberfläche reinigt, werden ältere Farbschichten sichtbar.",
+      "Während der Klimakonferenz wurden die Interessen kleiner Inselstaaten besonders deutlich.",
     ],
   },
   {
@@ -187,9 +187,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Das Verb steht am Ende.",
     group: "Verb am Ende",
     examples: [
-      "Ich esse, bevor ich arbeite.",
-      "Ruf mich an, bevor du kommst.",
-      "Wir lernen, bevor wir die Prüfung machen.",
+      "Bevor ein Kunstwerk restituiert wird, prüfen Expertinnen seine Herkunftsgeschichte bis ins Detail.",
+      "Bevor die Simulation startet, legt der Spieler seine politischen Prioritäten fest.",
+      "Bevor Schutzmaßnahmen beschlossen werden, müssen lokale Ökosysteme sorgfältig untersucht werden.",
     ],
   },
   {
@@ -201,9 +201,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Oft mit Plusquamperfekt, wenn zwei Vergangenheiten verbunden werden.",
     group: "Verb am Ende",
     examples: [
-      "Nachdem ich gegessen hatte, ging ich spazieren.",
-      "Nachdem wir gearbeitet hatten, gingen wir nach Hause.",
-      "Nachdem sie gelernt hatte, machte sie eine Pause.",
+      "Nachdem die Forschenden die Satellitendaten ausgewertet hatten, veröffentlichten sie eine Studie zum Artenverlust.",
+      "Nachdem das Museum die Provenienz des Objekts geklärt hatte, begann die Debatte über Restitution.",
+      "Nachdem das Studio die Testversion veröffentlicht hatte, überarbeitete es mehrere ethisch problematische Spielentscheidungen.",
     ],
   },
   {
@@ -215,9 +215,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Benutze damit, wenn die Sätze unterschiedliche Subjekte haben können.",
     group: "Verb am Ende",
     examples: [
-      "Ich lerne Deutsch, damit ich die Prüfung bestehe.",
-      "Er spart Geld, damit er ein Auto kaufen kann.",
-      "Wir trainieren, damit wir gesund bleiben.",
+      "Die Ausstellung nutzt klare Audioguides, damit komplexe kunsthistorische Zusammenhänge verständlich bleiben.",
+      "Die Stadt pflanzt heimische Bäume, damit Vögel und Insekten wieder geeignete Lebensräume finden.",
+      "Das Spiel reduziert die Benutzeroberfläche, damit die moralische Unsicherheit stärker im Vordergrund steht.",
     ],
   },
   {
@@ -229,9 +229,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Benutze um ... zu, wenn das Subjekt gleich bleibt.",
     group: "Infinitiv mit zu",
     examples: [
-      "Ich lerne Deutsch, um die TELC-Prüfung zu bestehen.",
-      "Er arbeitet viel, um Geld zu sparen.",
-      "Wir fahren nach Bern, um Freunde zu besuchen.",
+      "Die Künstlerin sammelt Plastikmüll, um die Verschmutzung der Meere sichtbar zu machen.",
+      "Das Entwicklerteam verlangsamt das Spieltempo, um Reflexion statt bloßer Reaktion zu fördern.",
+      "Die Forschenden markieren Wanderkorridore, um gefährdete Tierbewegungen genauer zu verstehen.",
     ],
   },
   {
@@ -243,9 +243,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Wegen ist eine Präposition, kein Konnektor mit Verb.",
     group: "Genitiv",
     examples: [
-      "Wegen des schlechten Wetters bleiben wir zu Hause.",
-      "Wegen der Prüfung lerne ich jeden Tag.",
-      "Wegen eines Problems konnte ich nicht kommen.",
+      "Wegen der zunehmenden Lichtverschmutzung verlieren viele nachtaktive Tiere ihre Orientierung.",
+      "Wegen unklarer Besitzverhältnisse wurde die Rückgabe des Kunstwerks jahrelang verzögert.",
+      "Wegen technischer Einschränkungen musste das Studio mehrere erzählerische Ideen vereinfachen.",
     ],
   },
   {
@@ -257,9 +257,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Trotz nennt einen Gegengrund.",
     group: "Genitiv",
     examples: [
-      "Trotz des Regens gehen wir spazieren.",
-      "Trotz der Schwierigkeiten lernt er weiter.",
-      "Trotz einer Erkältung arbeitet sie heute.",
+      "Trotz erheblicher Budgetkürzungen entwickelte das Studio ein künstlerisch anspruchsvolles Spiel.",
+      "Trotz politischer Widerstände wurde das Naturschutzgebiet erweitert.",
+      "Trotz seiner abstrakten Form bleibt das Kunstwerk historisch präzise lesbar.",
     ],
   },
   {
@@ -271,9 +271,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Das Verb steht am Ende.",
     group: "Verb am Ende",
     examples: [
-      "Seitdem ich in Zürich wohne, lerne ich Deutsch.",
-      "Seitdem er arbeitet, hat er wenig Zeit.",
-      "Seitdem wir uns kennen, sind wir Freunde.",
+      "Seitdem das Museum seine Provenienzforschung veröffentlicht, wird die Sammlung kritischer wahrgenommen.",
+      "Seitdem die Stadt mehr Grünflächen vernetzt, kehren einige Vogelarten langsam zurück.",
+      "Seitdem Spiele moralische Ambivalenz ernst nehmen, werden sie häufiger als Kunstform diskutiert.",
     ],
   },
   {
@@ -285,9 +285,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Für indirekte Ja/Nein-Fragen.",
     group: "Verb am Ende",
     examples: [
-      "Ich weiß nicht, ob er kommt.",
-      "Kannst du mir sagen, ob der Kurs teuer ist?",
-      "Wir wissen nicht, ob die Prüfung schwierig sein wird.",
+      "Die Kommission prüft, ob die geplanten Schutzmaßnahmen tatsächlich ausreichen.",
+      "Die Kuratorin untersucht, ob das Werk während der Kolonialzeit unrechtmäßig erworben wurde.",
+      "Viele Kritiker fragen sich, ob interaktive Medien philosophische Argumente überzeugend darstellen können.",
     ],
   },
   {
@@ -299,9 +299,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Das Verb steht auf Position 2.",
     group: "Position 2",
     examples: [
-      "Ich lerne Deutsch. Außerdem arbeite ich Vollzeit.",
-      "Er spielt Fußball. Außerdem geht er ins Fitnessstudio.",
-      "Wir fahren nach Bern. Außerdem besuchen wir Freunde.",
+      "Das Spiel thematisiert Artensterben. Außerdem zeigt es, wie politische Entscheidungen ökologische Folgen verstärken.",
+      "Die Ausstellung präsentiert Gemälde. Außerdem rekonstruiert sie die sozialen Bedingungen ihrer Entstehung.",
+      "Der Essay analysiert Freiheit. Außerdem kritisiert er eine rein technische Vorstellung von Fortschritt.",
     ],
   },
   {
@@ -313,9 +313,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Da klingt oft etwas schriftlicher als weil.",
     group: "Verb am Ende",
     examples: [
-      "Da ich krank bin, bleibe ich zu Hause.",
-      "Da es spät ist, gehen wir schlafen.",
-      "Da ich arbeiten muss, kann ich nicht kommen.",
+      "Da historische Bilder oft Machtverhältnisse spiegeln, müssen sie kritisch kontextualisiert werden.",
+      "Da viele Tierarten grenzüberschreitend wandern, reichen nationale Schutzprogramme allein nicht aus.",
+      "Da das Spiel mehrere Enden besitzt, bleibt die ethische Bewertung bewusst offen.",
     ],
   },
   {
@@ -327,9 +327,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Das Verb steht am Ende.",
     group: "Verb am Ende",
     examples: [
-      "Falls du Hilfe brauchst, ruf mich an.",
-      "Falls es regnet, bleiben wir zu Hause.",
-      "Falls ich Zeit habe, komme ich vorbei.",
+      "Falls die Schutzgebiete nicht miteinander verbunden werden, bleiben viele Populationen genetisch isoliert.",
+      "Falls die Provenienz ungeklärt bleibt, sollte das Objekt nicht ausgestellt werden.",
+      "Falls die Spielmechanik moralische Folgen nur simuliert, verliert die Entscheidung an Gewicht.",
     ],
   },
   {
@@ -341,9 +341,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Das Verb steht am Ende.",
     group: "Verb am Ende",
     examples: [
-      "Warte hier, bis ich komme.",
-      "Ich lerne, bis ich alles verstehe.",
-      "Bleib zu Hause, bis du gesund bist.",
+      "Die Simulation läuft weiter, bis alle ökologischen Wechselwirkungen sichtbar geworden sind.",
+      "Die Debatte wird andauern, bis die Herkunft der Sammlung transparent geklärt ist.",
+      "Das Spiel steigert den Druck, bis der Spieler seine ursprüngliche Strategie hinterfragt.",
     ],
   },
   {
@@ -355,9 +355,9 @@ const telcConnectors: TelcConnectorCard[] = [
     hint: "Das Verb steht am Ende.",
     group: "Verb am Ende",
     examples: [
-      "Sobald ich Zeit habe, rufe ich dich an.",
-      "Sobald er kommt, beginnen wir.",
-      "Sobald die Prüfung vorbei ist, mache ich Urlaub.",
+      "Sobald die Daten veröffentlicht werden, können unabhängige Forschende die Ergebnisse überprüfen.",
+      "Sobald das Museum die Archive öffnet, verändert sich die öffentliche Diskussion.",
+      "Sobald die Spieler die Konsequenzen erkennen, wirkt die scheinbar einfache Entscheidung komplexer.",
     ],
   },
 ];
@@ -418,10 +418,10 @@ const verbPositionTables = [
       ["sobald", "tan pronto como"],
     ],
     examples: [
-      "Ich lerne Deutsch, weil ich die Prüfung bestehen möchte.",
-      "Ich gehe spazieren, obwohl es regnet.",
-      "Ich glaube, dass Deutsch wichtig ist.",
-      "Wenn ich Zeit habe, komme ich.",
+      "Die Ausstellung wirkt politisch, weil sie koloniale Erwerbsgeschichten offenlegt.",
+      "Obwohl die Simulation grafisch schlicht ist, erzeugt sie eine starke philosophische Wirkung.",
+      "Viele Forschende vermuten, dass Lichtverschmutzung nachtaktive Tiere stark beeinflusst.",
+      "Wenn virtuelle Museen barrierefrei gestaltet werden, erreicht kulturelle Bildung mehr Menschen.",
     ],
   },
   {
@@ -441,11 +441,11 @@ const verbPositionTables = [
       ["dann", "entonces"],
     ],
     examples: [
-      "Ich bin müde. Deshalb gehe ich schlafen.",
-      "Es regnet. Deswegen bleiben wir zu Hause.",
-      "Ich habe keine Zeit. Darum komme ich nicht.",
-      "Es regnet. Trotzdem gehe ich spazieren.",
-      "Ich lerne Deutsch. Außerdem arbeite ich Vollzeit.",
+      "Der Wald verliert alte Bäume. Deshalb verschwinden spezialisierte Insektenarten.",
+      "Die Spielwelt reagiert dynamisch. Deswegen fühlt sich jede Entscheidung bedeutsam an.",
+      "Die Quellenlage ist widersprüchlich. Darum bleibt die Interpretation vorsichtig.",
+      "Das Budget war knapp. Trotzdem entstand ein künstlerisch anspruchsvolles Spiel.",
+      "Das Museum digitalisiert die Sammlung. Außerdem entwickelt es interaktive Vermittlungsformate.",
     ],
   },
   {
@@ -463,11 +463,11 @@ const verbPositionTables = [
       ["doch", "sin embargo"],
     ],
     examples: [
-      "Ich lerne Deutsch, und ich arbeite.",
-      "Ich möchte kommen, aber ich habe keine Zeit.",
-      "Möchtest du Tee, oder möchtest du Kaffee?",
-      "Ich lerne Deutsch, denn ich möchte die Prüfung bestehen.",
-      "Er trinkt keinen Kaffee, sondern er trinkt Tee.",
+      "Das Museum digitalisiert die Sammlung, und die Kuratoren entwickeln neue Vermittlungsformate.",
+      "Die Grafik wirkt schlicht, aber die moralische Wirkung der Handlung ist intensiv.",
+      "Soll die Ausstellung chronologisch sein, oder soll sie thematische Konflikte zeigen?",
+      "Die Restaurierung dauerte lange, denn die Farbschichten waren stark beschädigt.",
+      "Die Installation kritisiert nicht Technik selbst, sondern unseren unreflektierten Umgang mit ihr.",
     ],
   },
   {
@@ -483,10 +483,10 @@ const verbPositionTables = [
       ["statt / anstatt", "en lugar de"],
     ],
     examples: [
-      "Wegen des Regens bleiben wir zu Hause.",
-      "Trotz der Schwierigkeiten lernt er weiter.",
-      "Während des Kurses darf man nicht telefonieren.",
-      "Statt eines Autos kauft er ein Fahrrad.",
+      "Wegen zunehmender Lichtverschmutzung verlieren nachtaktive Tiere ihre Orientierung.",
+      "Trotz erheblicher Budgetkürzungen entwickelte das Studio ein anspruchsvolles Spiel.",
+      "Während der Restaurierung wurden mehrere übermalte Symbole sichtbar.",
+      "Statt einer linearen Chronologie wählt die Ausstellung eine thematische Struktur.",
     ],
   },
   {
@@ -497,9 +497,9 @@ const verbPositionTables = [
     structure: "um + Objekt + zu + Infinitiv",
     rows: [["um ... zu", "para"]],
     examples: [
-      "Ich lerne Deutsch, um die Prüfung zu bestehen.",
-      "Er arbeitet viel, um Geld zu sparen.",
-      "Wir fahren nach Bern, um Freunde zu besuchen.",
+      "Die Künstlerin sammelt Plastikmüll, um die Verschmutzung der Meere sichtbar zu machen.",
+      "Das Studio reduziert die Benutzeroberfläche, um moralische Unsicherheit hervorzuheben.",
+      "Die Forschenden markieren Wanderkorridore, um bedrohte Tierbewegungen besser zu verstehen.",
     ],
   },
 ];
@@ -512,9 +512,9 @@ const doubleConnectors = [
     meaningEn: "it is true that..., but...",
     formula: "Satz + zwar + ..., aber + Satz",
     examples: [
-      "Ich habe zwar wenig Zeit, aber ich lerne jeden Tag Deutsch.",
-      "Er ist zwar krank, aber er arbeitet weiter.",
-      "Die Prüfung ist zwar schwer, aber ich habe keine Angst.",
+      "Das Spiel ist zwar grafisch reduziert, aber erzählerisch außergewöhnlich komplex.",
+      "Die Ausstellung ist zwar provokant, aber kunsthistorisch präzise begründet.",
+      "Die Maßnahme ist zwar teuer, aber ökologisch langfristig notwendig.",
     ],
     priority: true,
   },
@@ -525,9 +525,9 @@ const doubleConnectors = [
     meaningEn: "either ... or ...",
     formula: "entweder + Satz, oder + Satz",
     examples: [
-      "Entweder kommst du heute, oder morgen.",
-      "Wir fahren entweder nach Bern oder nach Zürich.",
-      "Du musst entweder lernen oder arbeiten.",
+      "Entweder schützt die Stadt die Grünflächen konsequent, oder sie verliert wichtige Lebensräume.",
+      "Die Ausstellung konzentriert sich entweder auf die Provenienz der Werke oder auf ihre ästhetische Wirkung.",
+      "Das Spiel zwingt die Figur entweder zum moralischen Kompromiss oder zum persönlichen Verlust.",
     ],
     priority: true,
   },
@@ -538,9 +538,9 @@ const doubleConnectors = [
     meaningEn: "neither ... nor ...",
     formula: "weder + ..., noch + ...",
     examples: [
-      "Ich trinke weder Kaffee noch Tee.",
-      "Er spricht weder Deutsch noch Französisch.",
-      "Wir haben weder Zeit noch Geld.",
+      "Die Theorie erklärt weder emotionale Bindung noch ästhetische Erfahrung vollständig.",
+      "Das Spiel bietet weder einfache Helden noch eindeutige Feinde.",
+      "Die Studie berücksichtigt weder lokale Traditionen noch langfristige Klimadaten ausreichend.",
     ],
     priority: false,
   },
@@ -551,9 +551,9 @@ const doubleConnectors = [
     meaningEn: "both ... and ...",
     formula: "sowohl + ..., als auch + ...",
     examples: [
-      "Ich spreche sowohl Spanisch als auch Englisch.",
-      "Er arbeitet sowohl im Büro als auch zu Hause.",
-      "Wir mögen sowohl Pizza als auch Pasta.",
+      "Das Museum zeigt sowohl klassische Gemälde als auch interaktive Medienkunst.",
+      "Das Spiel überzeugt sowohl durch seine Mechanik als auch durch seine philosophische Erzählstruktur.",
+      "Der Bericht berücksichtigt sowohl ökologische Daten als auch soziale Folgen.",
     ],
     priority: true,
   },
@@ -564,9 +564,9 @@ const doubleConnectors = [
     meaningEn: "not only ... but also ...",
     formula: "nicht nur + ..., sondern auch + ...",
     examples: [
-      "Ich lerne nicht nur Deutsch, sondern auch Italienisch.",
-      "Er ist nicht nur intelligent, sondern auch freundlich.",
-      "Sie arbeitet nicht nur viel, sondern auch sehr gut.",
+      "Die Installation thematisiert nicht nur Umweltzerstörung, sondern auch kollektive Verantwortung.",
+      "Das Spiel ist nicht nur Unterhaltung, sondern auch eine Reflexion über Freiheit.",
+      "Die Ausstellung zeigt nicht nur Kunstwerke, sondern auch ihre politischen Entstehungsbedingungen.",
     ],
     priority: true,
   },
@@ -577,9 +577,9 @@ const doubleConnectors = [
     meaningEn: "the more ..., the more ...",
     formula: "Je + Komparativ, desto + Komparativ",
     examples: [
-      "Je mehr ich lerne, desto besser spreche ich Deutsch.",
-      "Je älter man wird, desto mehr Erfahrung hat man.",
-      "Je länger ich arbeite, desto müder werde ich.",
+      "Je stärker der Meeresspiegel steigt, desto dringlicher werden internationale Schutzmaßnahmen.",
+      "Je komplexer die Spielwelt reagiert, desto verantwortlicher fühlt sich der Spieler.",
+      "Je genauer die Provenienz erforscht wird, desto schwieriger werden einfache Besitzansprüche.",
     ],
     priority: false,
   },
@@ -590,9 +590,9 @@ const doubleConnectors = [
     meaningEn: "on the one hand ..., on the other hand ...",
     formula: "einerseits + ..., andererseits + ...",
     examples: [
-      "Einerseits möchte ich reisen, andererseits habe ich wenig Geld.",
-      "Einerseits ist der Job interessant, andererseits ist er stressig.",
-      "Einerseits lerne ich gern, andererseits brauche ich Freizeit.",
+      "Einerseits eröffnet Digitalisierung neue Zugänge zur Kunst, andererseits verändert sie die Aura des Originals.",
+      "Einerseits können Games Empathie fördern, andererseits bleiben sie Teil einer kommerziellen Unterhaltungsindustrie.",
+      "Einerseits braucht Naturschutz klare Regeln, andererseits muss er lokale Lebensrealitäten berücksichtigen.",
     ],
     priority: false,
   },
@@ -603,9 +603,9 @@ const doubleConnectors = [
     meaningEn: "neither ... nor ..., but rather ...",
     formula: "weder + ..., noch + ..., sondern + ...",
     examples: [
-      "Er spricht weder Deutsch noch Englisch, sondern Spanisch.",
-      "Ich trinke weder Kaffee noch Tee, sondern Wasser.",
-      "Sie arbeitet weder im Büro noch zu Hause, sondern in der Schule.",
+      "Das Werk ist weder reine Dekoration noch bloße Provokation, sondern ein vielschichtiger Kommentar zur Gegenwart.",
+      "Die Simulation zeigt weder Utopie noch Katastrophe, sondern eine fragile Zukunft voller Entscheidungen.",
+      "Der Text verteidigt weder Fortschrittsoptimismus noch Kulturpessimismus, sondern eine verantwortliche Technikethik.",
     ],
     priority: false,
   },

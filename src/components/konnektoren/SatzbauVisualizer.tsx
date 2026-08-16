@@ -6,10 +6,10 @@ const patterns = [
     label: "Nebensatz",
     connectors: "weil · obwohl · wenn · damit",
     blocks: [
-      ["Ich bleibe zu Hause,", "Hauptsatz", "#fffaf0"],
+      ["Die Ausstellung wirkt politisch,", "Hauptsatz", "#fffaf0"],
       ["weil", "Konnektor", "#ffe130"],
-      ["ich müde", "Subjekt + Inhalt", "#9dd9ff"],
-      ["bin.", "Verb am Ende", "#ff7b2f"],
+      ["sie koloniale Erwerbsgeschichten", "Subjekt + Inhalt", "#9dd9ff"],
+      ["offenlegt.", "Verb am Ende", "#ff7b2f"],
     ],
   },
   {
@@ -17,10 +17,10 @@ const patterns = [
     label: "Position 1",
     connectors: "deshalb · trotzdem · außerdem",
     blocks: [
-      ["Ich bin müde.", "Grund", "#fffaf0"],
+      ["Der Wald verliert alte Bäume.", "Grund", "#fffaf0"],
       ["Deshalb", "Konnektor", "#ffe130"],
-      ["bleibe", "Verb auf Position 2", "#ff7b2f"],
-      ["ich zu Hause.", "Subjekt + Inhalt", "#9dd9ff"],
+      ["verschwinden", "Verb auf Position 2", "#ff7b2f"],
+      ["spezialisierte Insektenarten.", "Subjekt + Inhalt", "#9dd9ff"],
     ],
   },
   {
@@ -28,10 +28,10 @@ const patterns = [
     label: "Hauptsatz",
     connectors: "und · aber · denn",
     blocks: [
-      ["Ich bleibe zu Hause,", "Hauptsatz", "#fffaf0"],
+      ["Die Restaurierung dauerte lange,", "Hauptsatz", "#fffaf0"],
       ["denn", "Konnektor", "#ffe130"],
-      ["ich", "Subjekt", "#9dd9ff"],
-      ["bin müde.", "Verb bleibt Position 2", "#73d673"],
+      ["die Farbschichten", "Subjekt", "#9dd9ff"],
+      ["waren beschädigt.", "Verb bleibt Position 2", "#73d673"],
     ],
   },
 ];
